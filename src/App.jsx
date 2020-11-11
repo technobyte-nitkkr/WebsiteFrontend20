@@ -12,6 +12,8 @@ function App() {
       <div className="App">
         <h1>bruh workin.</h1>
         <LoginButton />
+
+        <p>{state.user && state.user.name ? state.user.name : null}</p>
       </div>
     </Store.Provider>
   );
