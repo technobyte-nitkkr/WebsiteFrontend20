@@ -76,7 +76,10 @@ function App() {
       <div className="App">
         <Router>
         {routes}
-        </Router>     
+        </Router>
+        
+
+
       </div>
     </Store.Provider>
   );

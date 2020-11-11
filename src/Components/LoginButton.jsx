@@ -7,24 +7,32 @@ import Store from "../Store/Store";
 import { LOGIN } from "../Store/Types";
 
 const LoginButton = () => {
-  const [dispatch] = useContext(Store);
+  const [_, dispatch] = useContext(Store);
   const request = useFetch(Keys.BASE_API);
   const [localState, setLocalState] = useState({
     error: "",
   });
 
   const success = async (e) => {
+    console.info("Auth on Success", e);
     const TOKEN = e.tokenId;
+    try {
+      const response = await request.post("/login", {
+        idToken: TOKEN,
+      });
 
-    const response = await request.post("/login", {
-      idToken: TOKEN,
-    });
-
-    console.table(response);
-    console.log(dispatch);
+      console.log(response);
+      dispatch({
+        type: LOGIN,
+        payload: response.data.token,
+      });
+    } catch (error) {
+      console.info("ERROR AUTH FETCH", error);
+    }
   };
 
   const failed = (e) => {
+    console.info("Auth on Failure", e);
     setLocalState({
       ...localState,
       error: "Error. Try again.",
