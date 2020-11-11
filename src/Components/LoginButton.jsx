@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { GoogleLogin } from "react-google-login";
 import useFetch from "use-http";
 
 import Keys from "../config.keys";
+import Store from "../Store/Store";
+import { LOGIN } from "../Store/Types";
 
 const LoginButton = () => {
+  const [dispatch] = useContext(Store);
   const request = useFetch(Keys.BASE_API);
   const [localState, setLocalState] = useState({
     error: "",
@@ -18,6 +21,7 @@ const LoginButton = () => {
     });
 
     console.table(response);
+    console.log(dispatch);
   };
 
   const failed = (e) => {
