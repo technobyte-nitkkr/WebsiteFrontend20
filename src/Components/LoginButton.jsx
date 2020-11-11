@@ -21,10 +21,10 @@ const LoginButton = () => {
         idToken: TOKEN,
       });
 
-      console.table(response);
+      console.log(response);
       dispatch({
         type: LOGIN,
-        payload: response.data,
+        payload: response.data.token,
       });
     } catch (error) {
       console.info("ERROR AUTH FETCH", error);
