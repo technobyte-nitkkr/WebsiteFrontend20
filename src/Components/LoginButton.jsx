@@ -25,6 +25,13 @@ const LoginButton = () => {
       ...localState,
       error: "Error. Try again.",
     });
+
+    setTimeout(() => {
+      setLocalState({
+        ...localState,
+        error: "",
+      });
+    }, 2000);
   };
 
   return (
@@ -37,6 +44,7 @@ const LoginButton = () => {
           buttonText="Login"
           onSuccess={success}
           onFailure={failed}
+          isSignedIn={true}
         />
       )}
     </div>
