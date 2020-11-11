@@ -1,8 +1,11 @@
 import { createContext } from "react";
 
+const token = localStorage.getItem('ts20token') || null;
+
 const Store = createContext({
     user: null,
-    isAuth: false
+    isAuth: false,
+    token
 })
 
 export default Store
