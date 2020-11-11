@@ -1,6 +1,6 @@
 import { useContext, useReducer } from "react";
 import Store from "./Store/Store";
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Reducer from "./Store/Reducer";
 import {Home} from './Pages/Home';
 import {About} from './Pages/About';
