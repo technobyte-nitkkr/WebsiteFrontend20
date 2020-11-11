@@ -63,7 +63,7 @@ function App() {
       />
 
 <Route
-        path="/eventdetails"
+        path="/eventdetails/:category/:event" 
         exact
         component={EventDescription}
       />
