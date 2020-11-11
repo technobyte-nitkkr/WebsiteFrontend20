@@ -77,11 +77,16 @@ function App() {
       <div className="App">
         
         <h1>bruh workin.</h1>
-        <LoginButton />   
+
+        <LoginButton />  
+        <p>{state.user && state.user.name ? state.user.name : null}</p>
         <Router>
 
         {routes}
-        </Router>     
+        </Router>
+        
+
+
       </div>
     </Store.Provider>
   );
