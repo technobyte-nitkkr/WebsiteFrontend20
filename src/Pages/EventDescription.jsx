@@ -22,7 +22,7 @@ const EventDescription = () => {
         getEventDetails();
     }, []);
     return (<div>
-        EventDescription page with category name {category} and event name {event} coming soon...
+        Event Description page with category name {category} and event name {event} coming soon...
 
     </div>)
 }
