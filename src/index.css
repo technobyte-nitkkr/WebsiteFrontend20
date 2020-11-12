@@ -1,5 +1,80 @@
+/* -------------------------
+
+UI THEME
+
+MAJOR GREEN - #0EF37F
+MAJOR BLACK - #000000
+MINOR GREY - #121B20
+
+-------------------------
+*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+:root {
+    --primary: #0EF37F;
+    --secondary-black: #121B20;
+    --major-black: #0e0e0e;
+    --font: 'Poppins'
+}
+
+body {
+    background-color: var(--major-black);
+    color: #0EF37F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary {
+    color: #0EF37F;
+}
+
+.md {
+    font-size: 2em;
+}
+
+.bar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #0EF37F;
+    border-radius: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.circle:hover {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 20em;
+}
+
+.m-item {
+    font-weight: 200 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

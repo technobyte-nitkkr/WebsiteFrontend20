@@ -1,16 +1,17 @@
 import { useContext, useReducer } from "react";
 import Store from "./Store/Store";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Reducer from "./Store/Reducer";
-import { Home } from './Pages/Home';
-import { About } from './Pages/About';
-import { Contact } from './Pages/Contact';
-import { Devs } from './Pages/Devs';
-import { EventDescription } from './Pages/EventDescription';
-import { HomeComponent } from './Components/HomeComponent';
-import { Events } from './Pages/Events';
-import { Queries } from './Pages/Queries';
-import { Category } from './Pages/Category';
+import { Home } from "./Pages/Home";
+import { About } from "./Pages/About";
+import { Contact } from "./Pages/Contact";
+import { Devs } from "./Pages/Devs";
+import { EventDescription } from "./Pages/EventDescription";
+import { Events } from "./Pages/Events";
+import { Queries } from "./Pages/Queries";
+import { Category } from "./Pages/Category";
+
 import { ErrorPage } from "./Pages/Errorpage";
 import { UserProfilePage } from "./Pages/UserProfilePage";
 
@@ -20,48 +21,20 @@ function App() {
 
   let routes = (
     <Switch>
-      <Route path='/' exact component={HomeComponent} />
-      <Route
-        path="/home"
-        exact
-        component={Home}
-      />
 
-      <Route
-        path="/about"
-        exact
-        component={About}
-      />
+      <Route path="/" exact component={Home} />
 
-      <Route
-        path="/contact"
-        exact
-        component={Contact}
-      />
+      <Route path="/about" exact component={About} />
 
-      <Route
-        path="/query"
-        exact
-        component={Queries}
-      />
+      <Route path="/contact" exact component={Contact} />
 
-      <Route
-        path="/devs"
-        exact
-        component={Devs}
-      />
+      <Route path="/query" exact component={Queries} />
 
-      <Route
-        path="/categories"
-        exact
-        component={Category}
-      />
+      <Route path="/devs" exact component={Devs} />
 
-      <Route
-        path="/events/:category"
-        exact
-        component={Events}
-      />
+      <Route path="/categories" exact component={Category} />
+
+      <Route path="/events/:category" exact component={Events} />
 
       <Route
         path="/eventdetails/:category/:event"
@@ -77,10 +50,8 @@ function App() {
   return (
     <Store.Provider value={[state, dispatch]}>
       <div className="App">
-        <Router>
-          {routes}
-        </Router>
 
+        <Router>{routes}</Router>
 
 
       </div>

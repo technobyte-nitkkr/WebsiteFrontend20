@@ -31,7 +31,7 @@ const UserProfilePage = () => {
         <div>
 
             {
-                isAuth ? <div> Yepppe you are logined</div> : <div>You are not logined </div>
+                userData.isAuth ? <div> Yepppe you are logined</div> : <div>You are not logined </div>
             }
             User Profile Page
         </div>
