@@ -1,5 +1,6 @@
 import { useContext, useReducer } from "react";
 import Store from "./Store/Store";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Reducer from "./Store/Reducer";
 import { Home } from "./Pages/Home";
@@ -10,6 +11,7 @@ import { EventDescription } from "./Pages/EventDescription";
 import { Events } from "./Pages/Events";
 import { Queries } from "./Pages/Queries";
 import { Category } from "./Pages/Category";
+
 import { ErrorPage } from "./Pages/Errorpage";
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
 
   let routes = (
     <Switch>
+
       <Route path="/" exact component={Home} />
 
       <Route path="/about" exact component={About} />
@@ -39,11 +42,15 @@ function App() {
       />
       <Route path="*" component={ErrorPage} />
     </Switch>
+
   );
   return (
     <Store.Provider value={[state, dispatch]}>
       <div className="App">
+
         <Router>{routes}</Router>
+
+
       </div>
     </Store.Provider>
   );
