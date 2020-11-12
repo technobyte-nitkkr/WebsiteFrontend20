@@ -7,7 +7,6 @@ import { About } from "./Pages/About";
 import { Contact } from "./Pages/Contact";
 import { Devs } from "./Pages/Devs";
 import { EventDescription } from "./Pages/EventDescription";
-import { HomeComponent } from "./Components/HomeComponent";
 import { Events } from "./Pages/Events";
 import { Queries } from "./Pages/Queries";
 import { Category } from "./Pages/Category";
@@ -19,8 +18,7 @@ function App() {
 
   let routes = (
     <Switch>
-      <Route path="/" exact component={HomeComponent} />
-      <Route path="/home" exact component={Home} />
+      <Route path="/" exact component={Home} />
 
       <Route path="/about" exact component={About} />
 
