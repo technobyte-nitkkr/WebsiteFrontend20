@@ -42,7 +42,6 @@
     inset 0 0px 120px#121B20;
   width: 45%;
   flex: none;
-  background-image: url("https://wallpaperaccess.com/full/749915.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -83,6 +82,8 @@
   animation: titleEffect 1s cubic-bezier(0,0,0.3,1);
   top: -50px;
   left: -45px;
+  
+  
 }
 
 .profile-info h2 {
@@ -99,7 +100,7 @@
 .profile-info p {
   line-height: 1.3rem;
   font-size:1.2rem;
-  text-shadow: aqua;
+  color: #121B20
 }
 
 .user-events{
