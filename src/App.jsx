@@ -11,7 +11,7 @@ import { EventDescription } from "./Pages/EventDescription";
 import { Events } from "./Pages/Events";
 import { Queries } from "./Pages/Queries";
 import { Category } from "./Pages/Category";
-
+import { GuestLecture } from "./Pages/GuestLecture";
 import { ErrorPage } from "./Pages/Errorpage";
 
 function App() {
@@ -30,6 +30,8 @@ function App() {
       <Route path="/query" exact component={Queries} />
 
       <Route path="/devs" exact component={Devs} />
+
+      <Route path="/lectures" exact component={GuestLecture} />
 
       <Route path="/categories" exact component={Category} />
 
