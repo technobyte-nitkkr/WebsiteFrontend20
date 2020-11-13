@@ -18,3 +18,8 @@ body
     margin-top: 1rem;
     border-radius: 5rem;
 }
+
+.col
+{
+    text-align: center;
+}
