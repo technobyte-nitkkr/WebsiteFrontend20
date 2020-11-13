@@ -1,4 +1,4 @@
-import { useContext, useReducer } from "react";
+import { useContext, useReducer, useState } from "react";
 import Store from "./Store/Store";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Reducer from "./Store/Reducer";
@@ -13,14 +13,14 @@ import { Category } from "./Pages/Category";
 import { GuestLecture } from "./Pages/GuestLecture";
 import { ErrorPage } from "./Pages/Errorpage";
 import { UserProfilePage } from "./Pages/UserProfilePage";
-import { Particle } from './Components/particle';
+import { Particle } from "./Components/particle";
+import SplashScreen from "./Components/SplashScreen";
 function App() {
   const initialState = useContext(Store);
   const [state, dispatch] = useReducer(Reducer, initialState);
-
+  const [splash, setSplash] = useState(true);
   let routes = (
     <Switch>
-
       <Route path="/" exact component={Home} />
 
       <Route path="/about" exact component={About} />
@@ -42,27 +42,26 @@ function App() {
         exact
         component={EventDescription}
       />
-      <Route path='/user' exact component={UserProfilePage} />
+      <Route path="/user" exact component={UserProfilePage} />
 
       <Route path="*" component={ErrorPage} />
     </Switch>
-
   );
+
+  setTimeout(() => {
+    setSplash(false);
+  }, 3000);
+
+  if (splash) return <SplashScreen />;
+
   return (
     <Store.Provider value={[state, dispatch]}>
       <div className="App">
-
-       
         <div className="particle-style">
-
-          <Router >
-            {routes}
-          </Router>
-
+          <Router>{routes}</Router>
         </div>
 
-        <Particle/>
-          
+        <Particle />
       </div>
     </Store.Provider>
   );
