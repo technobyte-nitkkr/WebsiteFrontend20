@@ -10,23 +10,22 @@ const UserProfilePage = () => {
         const getUserDetails = async () => {
             console.log(userData);
             try {
-                const url = Keys.BASE_API + '/user';
-                var res = await axios.put(url, {
+                const url = Keys.BASE_API + '/user/event';
+                var res = await axios.get(url, {
                     headers: {
                         'authorization': userData.token,
 
                     }
                 });
+                setUserData([...res.data.data]);
                 console.log(res);
-
-
             }
             catch (e) {
                 console.log(e);
             }
         };
         getUserDetails();
-    });
+    },[]);
     return (
         <div>
 

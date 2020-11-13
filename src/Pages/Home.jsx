@@ -12,7 +12,7 @@ const Home = () => {
         </Link>
       </div>
       <div className="center">
-        <h1 className="main-title">ALTIUS</h1>
+        <h1 className="main-title Altius">ALTIUS</h1>
       </div>
       <div className="menu">
         <div className="m-item">
