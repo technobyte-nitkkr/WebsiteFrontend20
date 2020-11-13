@@ -101,11 +101,37 @@ body {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: .3rem;
+    margin-right: .3rem;
 }
 
 .guestimage
 {
     object-fit: contain;
+    max-width: 80%;
+    height: auto;
+}
+.col 
+{
+    text-align: center;
+}
+.homerow
+{
+    text-align: center;
+}
+.hometitle
+{
+    font-size: 16vh;
+}
+.container
+{
+    text-align: center;
+}
+.homecir
+{
+    text-align: center;
+}
+.circle
+{
+    margin-left: 8vh;
 }
