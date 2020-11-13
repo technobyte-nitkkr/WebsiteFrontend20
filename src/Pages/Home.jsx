@@ -10,7 +10,7 @@ const Home = () => {
         </div>
       </Container>
       <Container className="center">
-        <h1 className="hometitle">ALTIUS</h1>
+        <h2 class="text" data-text="Altius...">ALTIUS...</h2>
       </Container>
       <Container>
         <Row className="homerow">
@@ -50,4 +50,3 @@ const Home = () => {
 };
 
 export { Home };
-
