@@ -1,12 +1,15 @@
 import { React } from "react";
 import { Link } from 'react-router-dom';
+import LoginButton from "../Components/LoginButton";
 const Home = () => {
   return (
     <div>
       <div>
+    
         <Link to='/user'>
           <div className="bar">
             <i className="primary md fa fa-user" aria-hidden="true"></i>
+         
           </div>
         </Link>
       </div>
