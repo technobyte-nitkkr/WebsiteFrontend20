@@ -100,10 +100,12 @@ body {
     margin: 2rem;
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 2rem;;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .guestimage
 {
-    object-fit: cover;
+    object-fit: contain;
 }

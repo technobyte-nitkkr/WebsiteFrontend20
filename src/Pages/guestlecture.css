@@ -8,3 +8,13 @@ body
 {
     background-color: black;
 }
+.guestname:hover
+{
+    color :rgb(109, 184, 219);
+    font-size: 2.4rem;
+}
+.guestimg:hover
+{
+    margin-top: 1rem;
+    border-radius: 5rem;
+}

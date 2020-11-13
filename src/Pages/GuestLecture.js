@@ -33,7 +33,7 @@ const GuestLecture = () => {
             items.map((item,index)=>(
                     <Row className="guestrow">
                         <Col xl={6} md={6} sm={12}>
-                            <h2>{item.name}</h2>
+                            <h2 className="guestname">{item.name}</h2>
                             <h5>Date: {item.date}</h5>
                             <h5>Time: {item.time}</h5>
                             <p>{item.desc}</p>
