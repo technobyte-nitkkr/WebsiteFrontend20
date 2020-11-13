@@ -1,0 +1,45 @@
+/* -------------------------
+
+UI THEME
+
+MAJOR GREEN - #0EF37F
+MAJOR BLACK - #0e0e0e
+MINOR GREY - #121B20
+
+-------------------------
+*/
+
+:root {
+    --primary: #0EF37F !important;
+    --secondary-black: #121B20 !important;
+    --major-black: #0e0e0e !important;
+    --font: 'Poppins' !important;
+}
+
+
+.category-title {
+    color: var(--primary);
+    margin-top: 15vh;
+    font-size: 15vw;
+    font-weight: 700 !important;
+}
+
+.c-item {
+    font-weight: 200 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0EF37F;
+}
+
+.menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-content: center;
+    align-items: stretch;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}

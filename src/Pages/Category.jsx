@@ -1,7 +1,7 @@
 import { React, useState, useEffect} from 'react';
 import axios from 'axios';
 import Key from "../config.keys";
-
+import './categories.css'
 const Category = () => {
     const [data, setData] = useState([]);
     const [error, setError] = useState(false);
@@ -30,6 +30,7 @@ const Category = () => {
         
     //     categoriesString.push(<div className='c-item'> <div><div className='circle'></div></div><div> {value} </div>);
     // }
+    data.categories = ['astronomy','astronomy','astronomy','astronomy','astronomy','astronomy','astronomy','astronomy','astronomy',];
     console.log(categoriesString);
     data.categories.map(cat => console.log(cat))
     return (
@@ -40,12 +41,12 @@ const Category = () => {
             </div>
         </div>
         <div className="center">
-            <h1 className="main-title">CATEGORIES</h1>
+            <h1 className="category-title">CATEGORIES</h1>
         </div>
-        <div className="menu">
+        <div className="menu-categories">
             {data.categories.map(cat => (
                 <div>
-                    <div className='m-item'>
+                    <div className='c-item'>
                         <div>
                             <div className="circle"></div>
                         </div>
