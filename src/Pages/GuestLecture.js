@@ -4,6 +4,7 @@ import Key from "../config.keys";
 import {Row,Col,Container} from 'react-bootstrap';
 import * as bs from 'bootstrap/dist/css/bootstrap.css';
 import './guestlecture.css';
+import back from  "../videos/back2.mp4";
 
 const GuestLecture = () => {
     const [items, setData] = useState([]);
@@ -24,6 +25,28 @@ const GuestLecture = () => {
     console.log(items);
     return (
     <div className="mainbox">
+        <video
+        autoPlay
+        loop
+        muted
+      style={
+        {
+          position:"absolute",
+          width: "100%",
+          left:"50%",
+          top:"50%",
+          height:"100%",
+          objectFit:"cover",
+          transform: "translate(-50%,-50%)",
+          zIndex:"-1",
+          opacity:".2"
+
+        }
+      }
+
+      >
+        <source src={back} type="video/mp4"/>
+      </video>
         <div className="mainguest">
             <h1 className="guestheading">GUEST LECTURES</h1>
         </div>
