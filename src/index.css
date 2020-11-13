@@ -78,3 +78,32 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.mainguest
+{
+    text-align: center;
+}
+.guestheading
+{
+    font-size: 8vh;
+    margin: 2vh;
+}
+.mainbox
+{
+    margin: 18px;
+    border:solid #0EF37F 4px;
+}
+
+.guestrow
+{
+    border: solid #0EF37F 4px;
+    margin: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;;
+}
+
+.guestimage
+{
+    object-fit: cover;
+}
