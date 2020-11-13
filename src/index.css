@@ -3,7 +3,7 @@
 UI THEME
 
 MAJOR GREEN - #0EF37F
-MAJOR BLACK - #000000
+MAJOR BLACK - #0e0e0e
 MINOR GREY - #121B20
 
 -------------------------
@@ -16,16 +16,28 @@ MINOR GREY - #121B20
 }
 
 :root {
-    --primary: #0EF37F;
-    --secondary-black: #121B20;
-    --major-black: #0e0e0e;
-    --font: 'Poppins'
+    --primary: #0EF37F !important;
+    --secondary-black: #121B20 !important;
+    --major-black: #0e0e0e !important;
+    --font: 'Poppins' !important;
+}
+
+.particle-background {
+    background-color: #0e0e0e;
+    height: 100000;
+}
+
+.particle-style {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
 }
 
 body {
-    background-color: var(--major-black);
-    color: #0EF37F;
-    font-family: 'Poppins', sans-serif;
+    background-color: var(--major-black) !important;
+    color: #0EF37F !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .primary {
@@ -61,6 +73,7 @@ body {
     justify-content: space-between;
     width: 50%;
     margin: auto;
+    margin-top: 40px;
 }
 
 .center {
@@ -68,7 +81,10 @@ body {
 }
 
 .main-title {
+    color: var(--primary);
     font-size: 20em;
+    margin-top: 80px;
+    font-weight: 700 !important;
 }
 
 .m-item {
@@ -77,4 +93,68 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #0EF37F;
+}
+
+
+/* GUEST LECTURE CSS */
+
+.guestname:hover {
+    color: rgb(109, 184, 219);
+    font-size: 2.4rem;
+}
+
+.guestimg:hover {
+    margin-top: 1rem;
+    border-radius: 5rem;
+}
+
+.col {
+    text-align: center;
+}
+
+.mainguest {
+    text-align: center;
+}
+
+.guestheading {
+    font-size: 8vh;
+    margin: 2vh;
+}
+
+.mainbox {
+    margin: 18px;
+    border: solid #0EF37F 2px;
+}
+
+.guestrow {
+    border: solid #0EF37F 2px;
+    margin: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: .3rem;
+    margin-right: .3rem;
+}
+
+.guestimg {
+    object-fit: cover;
+    max-width: 80%;
+    height: auto;
+}
+
+@media (max-width:800px) {
+    .main-title {
+        font-size: 5em;
+        margin-top: 120px;
+    }
+    .menu {
+        font-size: .7em;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .circle {
+        width: 15px;
+        height: 15px;
+    }
 }

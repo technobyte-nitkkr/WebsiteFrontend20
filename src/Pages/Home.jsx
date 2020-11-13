@@ -1,15 +1,17 @@
-
 import { React } from "react";
+import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <div>
       <div>
-        <div className="bar">
-          <i class="primary md fa fa-user" aria-hidden="true"></i>
-        </div>
+        <Link to='/user'>
+          <div className="bar">
+            <i className="primary md fa fa-user" aria-hidden="true"></i>
+          </div>
+        </Link>
       </div>
       <div className="center">
-        <h1 className="main-title">ALTIUS</h1>
+        <h1 className="main-title Altius">ALTIUS</h1>
       </div>
       <div className="menu">
         <div className="m-item">
@@ -42,4 +44,3 @@ const Home = () => {
 };
 
 export { Home };
-
