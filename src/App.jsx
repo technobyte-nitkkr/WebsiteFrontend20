@@ -1,6 +1,5 @@
 import { useContext, useReducer } from "react";
 import Store from "./Store/Store";
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Reducer from "./Store/Reducer";
 import { Home } from "./Pages/Home";
@@ -13,7 +12,8 @@ import { Queries } from "./Pages/Queries";
 import { Category } from "./Pages/Category";
 import { GuestLecture } from "./Pages/GuestLecture";
 import { ErrorPage } from "./Pages/Errorpage";
-
+import { UserProfilePage } from "./Pages/UserProfilePage";
+import { Particle } from './Components/particle';
 function App() {
   const initialState = useContext(Store);
   const [state, dispatch] = useReducer(Reducer, initialState);
@@ -42,6 +42,8 @@ function App() {
         exact
         component={EventDescription}
       />
+      <Route path='/user' exact component={UserProfilePage} />
+
       <Route path="*" component={ErrorPage} />
     </Switch>
 
@@ -50,9 +52,17 @@ function App() {
     <Store.Provider value={[state, dispatch]}>
       <div className="App">
 
-        <Router>{routes}</Router>
+       
+        <div className="particle-style">
 
+          <Router >
+            {routes}
+          </Router>
 
+        </div>
+
+        <Particle/>
+          
       </div>
     </Store.Provider>
   );
