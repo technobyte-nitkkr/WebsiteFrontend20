@@ -180,7 +180,8 @@ body {
     letter-spacing: 2px;
 }
 
-.form-container, .form-ele input  {
+.form-container, .form-ele input, .form-ele textarea  {
+    font-size: 17px;
     width: 33vw;
     margin: 0 auto;
 }
@@ -190,11 +191,12 @@ body {
 }
 
 .form-ele textarea, .form-ele input {
-    padding: 3px;
+    padding: 5px;
     border-radius: 10px;   
     background-color: #121B20;
     color: #f4f4f4;
     border-style: none;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .form-ele textarea:focus, .form-ele input:focus {
@@ -202,7 +204,7 @@ body {
 }
 
 .form-ele input::placeholder, .form-ele textarea::placeholder {
-    padding: 3px;
+    padding: 5px;
     color: #cccccc;
 }
 

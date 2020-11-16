@@ -42,8 +42,6 @@ const Queries = () => {
                 body,
                 config
             );
-            {/*
-            
             dispatch({
                 type: 'ADD_ERROR',
                 payload: { msg: 'query added.' }
@@ -54,10 +52,7 @@ const Queries = () => {
                 });
             }, 3000);
             
-            */}
-            
         } catch (error) {
-            {/*
             dispatch({
                 type: 'ADD_ERROR',
                 payload: { msg: 'Something went wrong.'}                
@@ -67,8 +62,6 @@ const Queries = () => {
                     type: 'REMOVE_ERRORS'
                 });
             }, 3000);
-            */}
-            console.log(error);
         }
     };
 
