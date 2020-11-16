@@ -158,3 +158,87 @@ body {
         height: 15px;
     }
 }
+
+
+/* QUERY PAGE CSS */
+
+.query-hd {
+    font-size: 12vh;
+    font-weight: 400 !important;
+    margin: 2vh auto;   
+    text-align: center;
+}
+
+.query-alt-hd {
+    font-size: 8vh;
+    letter-spacing: 2px;
+}
+
+.form-container, .form-ele input  {
+    width: 33vw;
+    margin: 0 auto;
+}
+
+.form-ele {
+    padding-bottom: 10px;
+}
+
+.form-ele textarea, .form-ele input {
+    padding: 3px;
+    border-radius: 10px;   
+    background-color: #121B20;
+    color: #f4f4f4;
+    border-style: none;
+}
+
+.form-ele textarea:focus, .form-ele input:focus {
+    outline: none;
+}
+
+.form-ele input::placeholder, .form-ele textarea::placeholder {
+    padding: 3px;
+    color: #cccccc;
+}
+
+.query-send {
+    text-align: center;
+}
+
+.query-send-btn {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 17px;
+    font-weight: 300 !important;
+    border: 3px solid #0EF37F;
+    color: #0EF37F;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 4px 20px; 
+    transition: all .35s;
+}
+
+.query-send-btn:hover {
+    background: #0EF37F;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .form-ele textarea {
+        width: 60vw;
+        height: 20vh;
+    }    
+
+    .form-ele input {
+        width: 60vw;
+    }
+
+    .form-container {
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+    .query-hd {
+        font-size: 11vh;
+    }
+}
