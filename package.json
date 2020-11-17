@@ -8,6 +8,8 @@
     "@testing-library/user-event": "^12.2.0",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
+    "date-fns": "^2.16.1",
+    "format": "^0.2.2",
     "history": "^5.0.0",
     "jsonwebtoken": "^8.5.1",
     "react": "^17.0.1",
