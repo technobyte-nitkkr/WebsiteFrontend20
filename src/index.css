@@ -208,6 +208,10 @@ body {
     color: #cccccc;
 }
 
+.query-feedback-box{
+    text-align: center;   
+}
+
 .query-send {
     text-align: center;
 }

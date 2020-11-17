@@ -11,11 +11,20 @@ const Queries = () => {
         email : '',
         text : ''
     });
+    const [ feedback, setFeedback ] = useState({
+        feedback : ''
+    });
 
     const handleChange = (e) => {
         setFormData({
             ...formData,
             [e.target.name]: e.target.value
+        });
+    };
+    
+    const handleFeedback = (msg) => {
+        setFeedback({
+            feedback: msg
         });
     };
 
@@ -46,22 +55,26 @@ const Queries = () => {
                 type: 'ADD_ERROR',
                 payload: { msg: 'query added.' }
             });
+            handleFeedback('Query submitted');
             setTimeout(() => {
                 dispatch({
                     type: 'REMOVE_ERRORS'
                 });
-            }, 3000);
+                handleFeedback('');
+            }, 2000);
             
         } catch (error) {
             dispatch({
                 type: 'ADD_ERROR',
                 payload: { msg: 'Something went wrong.'}                
             });
+            handleFeedback('Something went wrong, Try Again.');
             setTimeout(() => {
                 dispatch({
                     type: 'REMOVE_ERRORS'
                 });
-            }, 3000);
+                handleFeedback('');
+            }, 2000);
         }
     };
 
@@ -75,6 +88,9 @@ const Queries = () => {
                 </Link>
             </div>
             <h3 className = "query-hd">Ask your Query</h3>
+            <div className = "query-feedback-box">
+                {feedback.feedback}
+            </div>
             <div className = "form-container">
                 <form onSubmit = {handleSubmit} method = "POST">
                     <div className = "form-ele">
