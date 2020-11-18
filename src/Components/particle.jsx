@@ -90,7 +90,7 @@ const Particle = () => {
                         },
                         "onclick": {
                             "enable": true,
-                            "mode": "push"
+                            "mode": "pop"
                         },
                         "resize": true
                         },
