@@ -5,8 +5,9 @@ import { Particle } from "../Components/particle";
 const Home = () => {
   return (
     <div>
-
-      <div className="center particle-style">
+<div className="particle-style">
+  
+      <div className="center">
         <h1 className="main-title Altius">ALTIUS</h1>
       </div>
       <div className="menu">
@@ -39,6 +40,8 @@ const Home = () => {
           <div>Devs</div>
         </div>
       </div>
+
+</div>
       <Particle/>
     </div>
   );
