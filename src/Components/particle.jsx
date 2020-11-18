@@ -90,22 +90,22 @@ const Particle = () => {
                         },
                         "onclick": {
                             "enable": true,
-                            "mode": "pop"
+                            "mode": "remove"
                         },
                         "resize": true
                         },
                         "modes": {
                         "grab": {
-                            "distance": 400,
+                            "distance": 200,
                             "line_linked": {
                             "opacity": 1
                             }
                         },
                         "bubble": {
-                            "distance": 400,
-                            "size": 40,
+                            "distance": 200,
+                            "size": 60,
                             "duration": 2,
-                            "opacity": 8,
+                            "opacity": 4,
                             "speed": 3
                         },
                         "repulse": {
@@ -116,7 +116,7 @@ const Particle = () => {
                             "particles_nb": 5
                         },
                         "remove": {
-                            "particles_nb": 5
+                            "particles_nb": 1
                         }
                         }
                     },
