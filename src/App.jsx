@@ -1,6 +1,6 @@
 import { useContext, useReducer, useState } from "react";
 import Store from "./Store/Store";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, useHistory } from "react-router-dom";
 import Reducer from "./Store/Reducer";
 import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
@@ -9,6 +9,7 @@ import { Devs } from "./Pages/Devs";
 import { EventDescription } from "./Pages/EventDescription";
 import { Events } from "./Pages/Events";
 import { Queries } from "./Pages/Queries";
+import { Sponsers } from "./Pages/Sponsers";
 import { Category } from "./Pages/Category";
 import { GuestLecture } from "./Pages/GuestLecture";
 import { ErrorPage } from "./Pages/Errorpage";
@@ -35,6 +36,8 @@ function App() {
       <Route path="/lectures" exact component={GuestLecture} />
 
       <Route path="/categories" exact component={Category} />
+
+      <Route path="/sponsers" exact component={Sponsers} />
 
       <Route path="/events/:category" exact component={Events} />
 
