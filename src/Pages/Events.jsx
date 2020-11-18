@@ -32,7 +32,7 @@ const Events = props => {
     console.log(data);
     return (
         data.length == 0 ? <div className="event-column"></div> :
-            <div className="event-wrapper">
+            <div style={{ backgroundColour: 'black' }} className="event-wrapper">
 
                 <header>
                     <h1>Category Name

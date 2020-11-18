@@ -57,13 +57,13 @@ function App() {
   return (
     <Store.Provider value={[state, dispatch]}>
       <div className="App">
-        <div className="particle-style">
+
+
           <Router>{routes}</Router>
+
         </div>
 
-        <Particle />
-      </div>
-    </Store.Provider>
+  </Store.Provider>
   );
 }
 
