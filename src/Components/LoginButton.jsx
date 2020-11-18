@@ -4,7 +4,7 @@ import useFetch from "use-http";
 
 import Keys from "../config.keys";
 import Store from "../Store/Store";
-import { LOGIN } from "../Store/Types";
+import { AUTH, LOGIN } from "../Store/Types";
 
 const LoginButton = () => {
   const [_, dispatch] = useContext(Store);
@@ -14,17 +14,21 @@ const LoginButton = () => {
   });
 
   const success = async (e) => {
-    console.info("Auth on Success", e);
     const TOKEN = e.tokenId;
     try {
       const response = await request.post("/login", {
         idToken: TOKEN,
       });
 
-      console.log(response);
+      console.log("HERE");
+
       dispatch({
         type: LOGIN,
         payload: response.data.token,
+      });
+
+      dispatch({
+        type: AUTH,
       });
     } catch (error) {
       console.info("ERROR AUTH FETCH", error);
@@ -52,6 +56,15 @@ const LoginButton = () => {
         <p>{localState.error}</p>
       ) : (
         <GoogleLogin
+          render={(renderProps) => (
+            <button
+              className="login-button"
+              onClick={renderProps.onClick}
+              disabled={renderProps.disabled}
+            >
+              Login
+            </button>
+          )}
           clientId={Keys.OAUTH_CLIENT_ID}
           buttonText="Login"
           onSuccess={success}

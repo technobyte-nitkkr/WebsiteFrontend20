@@ -143,10 +143,52 @@ body {
     margin-right: .3rem;
 }
 
+.mr-2 {
+    margin-right: 10px;
+}
+
+.icon {
+    font-size: 1.5em;
+}
+
 .guestimg {
     object-fit: cover;
     max-width: 80%;
-    height: auto;
+}
+
+.login-button {
+    border: none;
+    background-color: transparent;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.login-button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.top-bar {
+    justify-content: space-between;
+    display: flex;
+    margin: 30px;
+    z-index: 100 !important;
+    position: relative;
+}
+
+.hover:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.top-title {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.flex-it {
+    display: flex;
 }
 
 @media (max-width:800px) {
