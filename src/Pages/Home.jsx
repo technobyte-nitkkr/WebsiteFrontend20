@@ -1,9 +1,11 @@
 import { React } from "react";
+
 import { Link } from "react-router-dom";
 import LoginButton from "../Components/LoginButton";
 const Home = () => {
   return (
     <div>
+
       <div className="center">
         <h1 className="main-title Altius">ALTIUS</h1>
       </div>
