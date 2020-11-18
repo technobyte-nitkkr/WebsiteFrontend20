@@ -34,14 +34,7 @@ const UserProfilePage = () => {
     return (
         <div>
 
-            {!(userData.isAuth) ? <div style={{
-                display: 'flex',
-                alignItems: 'center',
-
-                justifyContent: 'center',
-                alignSelf:'center',
-            }}>
-                <LoginButton /></div> :
+            {!(userData.isAuth) ? <div></div> :
                 <div>
                     <main className="profile">
                         <div className="profile-bg"></div>
