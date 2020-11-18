@@ -300,10 +300,12 @@ body {
 .splashscr
 {
     text-align: center;
+    overflow: hidden;
 }
 .splashlogo
 {
-    width: 50%;
+    width: 45%;
     height: auto;
     object-fit: cover;
+    overflow: hidden;
 }
