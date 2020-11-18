@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.headlineabout
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6vh;
+    font-weight: 400;
+    font-weight: 600;
+    font-size: 6.2vh;
+    background-clip: border-box;
+    box-sizing: inherit;
+    padding: 2.5vh;
+    margin-bottom: 0;
+}
+.aboutinform
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: .6rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.about-div
+{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: solid .1rem #0EF37F;
+    margin-top: 0rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  /*  background-image: url('../videos/imagebg2.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+}
+.aboutimg
+{
+    object-fit: cover;
+    padding-left: 3%;
+    width: 97%;
+    max-height: 600px;
+    border-radius: 2rem;
+}
+.aboutscroll
+{
+    text-align: center;
+}
+.container
+{
+    padding-top: 2rem;
+}
+.iconimg
+{
+    width: 120px;
+    height: 120px;
+}
+.card
+{
+    height: 22rem;
+}
+.smaller
+{
+    font-size: 3vh;
+}

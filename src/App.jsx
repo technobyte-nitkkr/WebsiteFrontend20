@@ -15,6 +15,7 @@ import { ErrorPage } from "./Pages/Errorpage";
 import { UserProfilePage } from "./Pages/UserProfilePage";
 import { Particle } from "./Components/particle";
 import SplashScreen from "./Components/SplashScreen";
+import TopBar from "./Components/TopBar";
 function App() {
   const initialState = useContext(Store);
   const [state, dispatch] = useReducer(Reducer, initialState);
@@ -50,7 +51,7 @@ function App() {
 
   setTimeout(() => {
     setSplash(false);
-  }, 3000);
+  }, 2000);
 
   if (splash) return <SplashScreen />;
 
