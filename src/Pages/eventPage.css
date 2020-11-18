@@ -14,12 +14,13 @@
 .event-column {
 cursor: pointer;
   flex: 1;
-  border-right: 1px solid gray;
   margin: 2px;
   padding: 10px;
 }
-.event-column:first-child {
-  margin-left: 0;
+.event-column:first-child{
+  max-width: 30%;
+  border-right: 1px solid gray;
+  
 }
 .event-column:last-child {
   margin-right: 0;
@@ -34,8 +35,15 @@ cursor: pointer;
     max-width: 20rem;
     margin: auto;
 }
+::-webkit-scrollbar {
+  width: 1px;
+}
 @media screen and (max-width: 980px) {
-  .event-columns .event-column {
+  
+.event-column:first-child{
+  width: 100%;
+}
+    .event-columns .event-column {
     margin-bottom: 5px;
     flex-basis: 40%;
   }
@@ -48,6 +56,11 @@ cursor: pointer;
   }
 }
 @media screen and (max-width: 680px) {
+
+.event-column:first-child{
+  max-width: 100%;
+  
+}
   .event-columns .event-column {
     flex-basis: 100%;
     margin: 0 0 5px 0;
