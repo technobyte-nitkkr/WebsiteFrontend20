@@ -296,3 +296,16 @@ body {
         font-size: 11vh;
     }
 }
+
+.splashscr
+{
+    text-align: center;
+    overflow: hidden;
+}
+.splashlogo
+{
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
