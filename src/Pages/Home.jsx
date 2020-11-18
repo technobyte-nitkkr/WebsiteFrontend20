@@ -1,12 +1,7 @@
-import { React, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
-import LoginButton from "../Components/LoginButton";
+import { React } from "react";
+import { Link}  from "react-router-dom";
 
 const Home = () => {
-
-  const handleClick = (info) => {
-      window.location.href = `/${info}`;
-  };
 
   return (
     <div>
@@ -15,52 +10,31 @@ const Home = () => {
       </div>
       <div className="menu">
         <div className="m-item">
-          <div 
-              className="circle"
-              onClick = {() => handleClick('about')}
-          />
+          <Link to='/about'><div className="circle" /></Link>
           <div>About</div>
         </div>
         <div className="m-item">
-          <div 
-              className="circle"
-              onClick = {() => handleClick('categories')}
-          />
+          <Link to='/categories'><div className="circle" /></Link>
           <div>Category</div>
         </div>
         <div className="m-item">
-          <div 
-              className="circle"
-              onClick = {() => handleClick('query')}
-          />
+          <Link to='/query'><div className="circle" /></Link>
           <div>Ask Query</div>
         </div>
         <div className="m-item">
-          <div 
-              className="circle"
-              onClick = {() => handleClick('contact')}
-          />
+          <Link to='/contact'><div className="circle" /></Link>
           <div>Contact</div>
         </div>
         <div className="m-item">
-          <div 
-              className="circle"
-              onClick = {() => handleClick('lectures')}
-          />
+          <Link to='/lectures'><div className="circle" /></Link>
           <div>Guest Lectures</div>
         </div>
         <div className="m-item">
-          <div 
-              className="circle"
-              onClick = {() => handleClick('sponsers')}
-          />
+          <Link to='/sponsers'><div className="circle" /></Link>
           <div>Sponsers</div>
         </div>
         <div className="m-item">
-          <div 
-              className="circle"
-              onClick = {() => handleClick('devs')}
-          />
+          <Link to='/devs'><div className="circle" /></Link>
           <div>Devs</div>
         </div>
       </div>
