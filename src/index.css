@@ -302,3 +302,12 @@ body {
     height: auto;
     object-fit: cover;
 }
+
+/*contact page css */
+
+.contactimg
+{
+    height: 170px;
+    width: 200px;
+    border-radius: 4rem;
+}
