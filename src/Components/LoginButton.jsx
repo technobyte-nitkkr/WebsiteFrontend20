@@ -20,8 +20,6 @@ const LoginButton = () => {
         idToken: TOKEN,
       });
 
-      console.log("HERE");
-
       dispatch({
         type: LOGIN,
         payload: response.data.token,
