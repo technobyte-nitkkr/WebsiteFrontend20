@@ -302,3 +302,19 @@ body {
     height: auto;
     object-fit: cover;
 }
+
+/*contact page css */
+
+.contactimg
+{
+    height: 100px;
+    width: 100px;
+}
+
+
+.contactcard
+{
+    margin-top: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
