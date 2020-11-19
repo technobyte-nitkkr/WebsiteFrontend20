@@ -6,7 +6,6 @@ const Home = () => {
   return (
     <div>
 <div className="particle-style">
-  
       <div className="center">
         <h1 className="main-title Altius">ALTIUS</h1>
       </div>
@@ -42,7 +41,9 @@ const Home = () => {
       </div>
 
 </div>
+  
       <Particle/>
+
     </div>
   );
 };
