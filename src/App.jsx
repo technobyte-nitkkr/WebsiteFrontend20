@@ -1,7 +1,7 @@
 import { useContext, useReducer, useState } from "react";
 import Store from "./Store/Store";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import {Sponsors} from './Pages/sponsors';
+import { Sponsors } from "./Pages/Sponsors";
 import Reducer from "./Store/Reducer";
 import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
@@ -15,6 +15,7 @@ import { GuestLecture } from "./Pages/GuestLecture";
 import { ErrorPage } from "./Pages/Errorpage";
 import { UserProfilePage } from "./Pages/UserProfilePage";
 import { Particle } from "./Components/particle";
+import Footer from "./Components/Footer";
 import SplashScreen from "./Components/SplashScreen";
 import TopBar from "./Components/TopBar";
 function App() {
@@ -45,7 +46,7 @@ function App() {
         component={EventDescription}
       />
       <Route path="/user" exact component={UserProfilePage} />
-    <Route path='/sponsors' exact component={Sponsors}/>
+      <Route path="/sponsors" exact component={Sponsors} />
       <Route path="*" component={ErrorPage} />
     </Switch>
   );
@@ -59,16 +60,14 @@ function App() {
   return (
     <Store.Provider value={[state, dispatch]}>
       <div className="App">
+        <Router>
+          <TopBar />
+          {routes}
+        </Router>
 
-
-          <Router>
-           
-          <TopBar /> 
-            {routes}</Router>
-
-        </div>
-
-  </Store.Provider>
+        <Footer />
+      </div>
+    </Store.Provider>
   );
 }
 

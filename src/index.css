@@ -714,3 +714,20 @@ body {
     font-size: 5em;
     font-weight: 600;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0E0E0E;
+}
+
+.footer>div {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
