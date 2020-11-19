@@ -28,7 +28,7 @@ cursor: pointer;
 }
 .category-title{
   font-weight: bold;
-  
+  font-size:2.5rem;
 }
 .event-register-button{
     background-color: #0EF37F;
