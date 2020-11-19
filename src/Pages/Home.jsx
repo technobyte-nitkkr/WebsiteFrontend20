@@ -1,11 +1,12 @@
 import { React } from "react";
-
 import { Link } from "react-router-dom";
 import LoginButton from "../Components/LoginButton";
+import { Particle } from "../Components/particle";
 const Home = () => {
   return (
     <div>
-
+<div className="particle-style">
+  
       <div className="center">
         <h1 className="main-title Altius">ALTIUS</h1>
       </div>
@@ -39,6 +40,9 @@ const Home = () => {
           <div>Devs</div>
         </div>
       </div>
+
+</div>
+      <Particle/>
     </div>
   );
 };

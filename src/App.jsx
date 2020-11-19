@@ -1,6 +1,7 @@
 import { useContext, useReducer, useState } from "react";
 import Store from "./Store/Store";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {Sponsors} from './Pages/sponsors';
 import Reducer from "./Store/Reducer";
 import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
@@ -44,7 +45,7 @@ function App() {
         component={EventDescription}
       />
       <Route path="/user" exact component={UserProfilePage} />
-
+    <Route path='/sponsors' exact component={Sponsors}/>
       <Route path="*" component={ErrorPage} />
     </Switch>
   );
@@ -58,16 +59,16 @@ function App() {
   return (
     <Store.Provider value={[state, dispatch]}>
       <div className="App">
-        <div className="particle-style">
+
+
           <Router>
-            <TopBar />
-            {routes}
-          </Router>
+           
+          <TopBar /> 
+            {routes}</Router>
+
         </div>
 
-        <Particle />
-      </div>
-    </Store.Provider>
+  </Store.Provider>
   );
 }
 
