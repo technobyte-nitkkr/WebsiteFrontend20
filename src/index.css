@@ -21,19 +21,12 @@ MINOR GREY - #121B20
     --major-black: #0e0e0e !important;
     --font: 'Poppins' !important;
 }
-
-.particle-background {
-    background-color: #0e0e0e;
-    height: 100000;
-}
-
 .particle-style {
     position: absolute;
     top: 0;
     width: 100%;
-    left: 0;
+    left:0;
 }
-
 body {
     background-color: var(--major-black) !important;
     color: #0EF37F !important;
@@ -154,6 +147,7 @@ body {
 .guestimg {
     object-fit: cover;
     max-width: 80%;
+    border-radius: 3rem;
 }
 
 .login-button {
@@ -295,4 +289,16 @@ body {
     .query-hd {
         font-size: 11vh;
     }
+}
+
+.splashscr
+{
+    text-align: center;
+    overflow: hidden;
+}
+.splashlogo
+{
+    width: 45%;
+    height: auto;
+    object-fit: cover;
 }

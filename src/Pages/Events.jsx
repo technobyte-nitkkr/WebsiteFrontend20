@@ -32,7 +32,7 @@ const Events = props => {
     console.log(data);
     return (
         data.length == 0 ? <div className="event-column"></div> :
-            <div className="event-wrapper">
+            <div style={{ backgroundColour: 'black' }} className="event-wrapper">
 
                 <header>
                     <h1>Category Name
@@ -44,27 +44,35 @@ const Events = props => {
                 <section className="event-columns">
 
 
-                    {!isVisible ? <span></span> :
-                        <div className="event-column">
+                    {(isVisible || (width>980)) ? 
+                        <div className="event-column" style={{overflowY:'scroll',height:'100vh'}} >
                             {
                                 data.map((item, index) =>
-                                    <div key={index} onClick={() => setIndex(index)}>
+                                    <div key={index} onClick={() =>{
 
-                                        <h1>{item.eventName} </h1>
+                                    
+                                     setIndex(index);
+                                     if(width<=980){
+                                         setIsVisible(false);
+                                     }
+                                    }
+                                     }>
+
+                                        <h2>{item.eventName} </h2>
                                         <br />
                                     </div>
                                 )}
 
-                        </div>}
+                        </div>:<span></span> }
 
 
                     <div className="event-column">
 
                         <h2>{data[currIndex].eventName}</h2>
-                        <p> {data[currIndex].description}</p>
-                    </div>
-
-                    <div className="event-column">
+                        <p style={{
+                            fontSize:'1.5rem'
+                        }}> {data[currIndex].description}</p>
+                        <br/>
                         <h2 >
                             <i className="primary md fa fa-calendar" aria-hidden="true"
                                 style={{ marginRight: '2rem', }}
@@ -107,6 +115,7 @@ const Events = props => {
                         <br />
                         <div className='event-register-button'>REGISTER</div>
                     </div>
+
 
                 </section>
 

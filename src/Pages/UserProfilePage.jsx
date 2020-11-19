@@ -34,20 +34,13 @@ const UserProfilePage = () => {
     return (
         <div>
 
-            {!(userData.isAuth) ? <div style={{
-                display: 'flex',
-                alignItems: 'center',
-
-                justifyContent: 'center',
-                alignSelf:'center',
-            }}>
-                <LoginButton /></div> :
+            {!(userData.isAuth) ? <div></div> :
                 <div>
                     <main className="profile">
                         <div className="profile-bg"></div>
                         <section className="container">
                             <aside className="profile-image" style={{
-                                backgroundImage: `url(${userData.user.picture})`
+                                backgroundImage: `url(https://scontent.fluh1-1.fna.fbcdn.net/v/t1.0-9/s960x960/125764343_3822597857760431_3471134365620395172_o.jpg?_nc_cat=106&ccb=2&_nc_sid=85a577&_nc_ohc=ZWczDiueOh0AX-hxAoO&_nc_ht=scontent.fluh1-1.fna&tp=7&oh=b76f1543e31dc274f037ad2af6ef2a4c&oe=5FDBF09E)`
                             }}>
                             </aside>
                             <section className="profile-info">
