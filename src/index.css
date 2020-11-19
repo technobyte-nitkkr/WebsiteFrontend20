@@ -30,7 +30,7 @@ MINOR GREY - #121B20
 }
 
 body {
-    background-color: var(--major-black) !important;
+    background-color: #0E0E0E !important;
     color: #0EF37F !important;
     font-family: 'Poppins', sans-serif !important;
 }
@@ -310,11 +310,32 @@ body {
 
 /* Eventpage css */
 
+.eventName {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
 .event-wrapper {
     padding: 5px;
     width: 100%;
     margin: 20px auto;
-    background-color: black;
+    margin-bottom: 50px;
+    width: 85%;
+    margin: auto;
+}
+
+.event-name {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.event-name>h2 {
+    font-size: 1.1em
+}
+
+.event-name:hover {
+    background-color: #1a1e20;
 }
 
 .event-columns {
