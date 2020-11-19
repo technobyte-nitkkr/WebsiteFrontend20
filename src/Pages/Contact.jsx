@@ -2,7 +2,12 @@ import { React, useState, useEffect } from "react";
 import axios from "axios";
 import Key from "../config.keys";
 import { Row, Col, Container,Card } from "react-bootstrap";
-const Contact = () => {
+import { useSpring, animated } from 'react-spring';
+
+const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1];
+const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
+
+function Contact() {
         const [items, setData] = useState([]);
         const [error, setError] = useState(false);
         useEffect(() => {
@@ -19,8 +24,9 @@ const Contact = () => {
           getEvents();
         }, []);
         console.log(items);
+        const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }));
         return (
-          <div className="mainbox" style={{ backgroundImage : "url('https://lh3.googleusercontent.com/proxy/H4DIDki74DGx7wrqWjxxgkrgWgKOGszSaB1fQRQt6-wSBGfI9LwofoBdc1eTds-Tq3ThNRPfDv0CYi34z8Y59r7bwBXcahAg_2FQvOXfRN4')",backgroundSize:"100% auto" }} >
+          <div className="mainbox" >
             <div className="mainguest">
               <h1 className="guestheading">Team Altius</h1>
             </div>
@@ -34,17 +40,24 @@ const Contact = () => {
                             <Row>
                                 {item.people.map((peeps,ind)=>(
                                     <Col>
-                                        <Card bg={"dark"} text={"white"} className="mb-2" style={{borderRadius:"2rem"}}>
+                                        <animated.div
+                                            onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                                            onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                                            style={{ transform: props.xys.interpolate(trans) }}
+                                            className="contactcard"
+                                        >
+                                        <Card bg={"dark"} text={"white"}  style={{width:"200px",height:"250px"}}>
                                             <Card.Header>
-                                                <img src={peeps.imageUrl} alt="" className="contactimg" style={{ backgroundImage : "url('https://i.pinimg.com/600x315/80/63/35/8063359effd01b990e653bb32a83485d.jpg')",backgroundSize:"200px 170px" } }/>
+                                                <img src={peeps.imageUrl} className="contactimg" style={{ backgroundImage : "url('https://i.pinimg.com/600x315/80/63/35/8063359effd01b990e653bb32a83485d.jpg')",backgroundSize:"80px 100px" } }/>
                                             </Card.Header>
                                             <Card.Body>
-                                              <Card.Title><h5>Name : {peeps.name}</h5>  </Card.Title>
+                                              <Card.Title><h5>{peeps.name}</h5>  </Card.Title>
                                                 <Card.Text>
-                                                    <h6>Post: {peeps.post}</h6>
+                                                    <h6>{peeps.post}</h6>
                                                 </Card.Text>
                                              </Card.Body>
                                         </Card>
+                                        </animated.div>
                                     </Col>
                                 ))}
                             </Row>

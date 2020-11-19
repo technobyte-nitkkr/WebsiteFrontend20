@@ -307,7 +307,13 @@ body {
 
 .contactimg
 {
-    height: 170px;
-    width: 200px;
-    border-radius: 4rem;
+    height: 100px;
+    width: 100px;
+}
+
+
+.contactcard
+{
+    margin-top: 1rem;
+    border-radius: 1rem;
 }
