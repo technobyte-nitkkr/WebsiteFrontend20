@@ -158,9 +158,13 @@ body {
 }
 
 .circle1 {
+  background: #0EF37F;
+  border-radius: 50%;
+  width: 50%;
+  height: 30%;
   position: absolute;
-  top: 150px;
-  left: calc(50% - 60px);
+  top: 45%;
+  left: calc(25%);
 }
 
 .stroke {

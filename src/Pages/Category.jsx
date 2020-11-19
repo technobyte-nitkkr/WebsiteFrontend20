@@ -5,8 +5,14 @@ import './categories.css'
 const Category = () => {
     const [data, setData] = useState([]);
     const [error, setError] = useState(false);
+    var radius = 50;
+
     useEffect(() => {
         window.scrollTo(0, 0);
+        // var clientWidth = document.getElementById('container1').clientWidth;
+        // if (clientWidth < 500) {
+        //     radius = 30;
+        // }
         const getEvents = async () => {
             try {
                 const res = await axios.get(`${Key.BASE_API}/events/categories`);
@@ -34,6 +40,12 @@ const Category = () => {
         data.categories = ["Astronomy", "Design", "Informals", "Managerial", "Online-Events", "Papyrus-Vitae", "Programming", "Quizzes", "Robotics"];
     console.log(categoriesString);
     data.categories.map(cat => console.log(cat))
+    var radius = 50;
+    // var clientWidth = document.getElementById('container1').clientWidth;
+    // if (clientWidth < 500) {
+    //     radius = 30;
+    // }
+
     return (
         <div>
             <div>
@@ -69,7 +81,7 @@ const Category = () => {
                         </div>
                         <div className="circle1">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                <circle className="stroke" cx="60" cy="60" r="50" />
+                                <div class="circle1"></div>
                             </svg>
                         </div>
                     </div>
