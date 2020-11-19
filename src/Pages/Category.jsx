@@ -48,11 +48,11 @@ const Category = () => {
 
     return (
         <div>
-            <div>
+            {/* <div>
                 <div className="bar">
                     <i className="primary md fa fa-user" aria-hidden="true"></i>
                 </div>
-            </div>
+            </div> */}
             <div className="center">
                 <h1 className="category-title">CATEGORIES</h1>
             </div>

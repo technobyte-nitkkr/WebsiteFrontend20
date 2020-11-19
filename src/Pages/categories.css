@@ -20,7 +20,7 @@ MINOR GREY - #121B20
 .category-title {
     color: var(--primary);
     margin-top: 15vh;
-    font-size: 6vw;
+    font-size: 7vw;
     font-weight: 500 !important;
     /* font: normal 50px 'Poppins', sans-serif;
     margin-bottom: 20px;
@@ -133,7 +133,7 @@ body {
 
   }
   .card:not(:first-child) {
-   margin-top: -140px;
+   margin-top: -200px;
    margin-left:0px;
    
   }
@@ -144,7 +144,7 @@ body {
     transition: 0.4s ease-out;
   }
   .card:hover {
-    transform: translateY(-140px);
+    transform: translateY(-100px);
     transition: 0.4s ease-out;
   }
   .container1 {
@@ -154,6 +154,9 @@ body {
     top: 60px;
     left: calc(50% - 300px);
     display: block;
+  }
+  .category-title{
+    font-size: 12vw;
   }
 }
 
