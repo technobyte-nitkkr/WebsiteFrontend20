@@ -1,8 +1,8 @@
 import { React, useState, useEffect } from "react";
 import { format } from "date-fns";
 import axios from "axios";
+import "./eventPage.css";
 import Key from "../config.keys";
-import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 const Events = (props) => {
   const category = props.match.params.category;
@@ -19,22 +19,22 @@ const Events = (props) => {
         const res = await axios.get(
           `${Key.BASE_API}/events/description?eventCategory=${category}`
         );
-        console.log(res.data.data);
+        //  console.log(res.data.data);
         setData([...res.data.data.events]);
       } catch (error) {
         setError(error);
+
         console.log(error);
       }
     };
     getEvents();
   }, [category]);
-  console.log(data);
   return data.length == 0 ? (
-    <div className="event-column"></div>
+    <div></div>
   ) : (
     <div style={{ backgroundColour: "black" }} className="event-wrapper">
       <header>
-        <h1>
+        <h1 className="category-title">
           Category Name
           {width > 980 ? (
             <span></span>
@@ -45,8 +45,11 @@ const Events = (props) => {
               }}
               style={{ float: "right" }}
             >
-              {" "}
-              ☰
+              {isVisible ? (
+                <i className="fa fa-times" aria-hidden="true"></i>
+              ) : (
+                <span>☰</span>
+              )}
             </span>
           )}{" "}
         </h1>
@@ -67,7 +70,10 @@ const Events = (props) => {
                   }
                 }}
               >
-                <h2>{item.eventName} </h2>
+                <h2>
+                  <i className="fa fa-angle-right" aria-hidden="true"></i>{" "}
+                  {item.eventName}{" "}
+                </h2>
                 <br />
               </div>
             ))}
