@@ -1,4 +1,4 @@
-import { LOGIN } from './Types'
+import { LOGIN, LOGOUT, AUTH } from './Types'
 import jwt from 'jsonwebtoken'
 import Keys from '../config.keys';
 
@@ -16,6 +16,21 @@ const Reducer = (state, action) => {
                 isAuth: true,
                 user: userData,
                 token: payload
+            }
+        case LOGOUT:
+            console.log("logged out")
+            localStorage.removeItem('ts20token')
+            return {
+                ...state,
+                isAuth: false,
+                user: null,
+                token: null
+            }
+        case AUTH:
+            console.log("HETE")
+            return {
+                ...state,
+                authLoading: false
             }
 
         default:

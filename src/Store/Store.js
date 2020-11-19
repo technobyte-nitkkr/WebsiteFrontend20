@@ -5,7 +5,8 @@ const token = localStorage.getItem('ts20token') || null;
 const Store = createContext({
     user: null,
     isAuth: false,
-    token
+    token,
+    authLoading: true
 })
 
 export default Store

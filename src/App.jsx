@@ -1,6 +1,7 @@
 import { useContext, useReducer, useState } from "react";
 import Store from "./Store/Store";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Sponsors } from "./Pages/sponsors";
 import Reducer from "./Store/Reducer";
 import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
@@ -15,6 +16,8 @@ import { ErrorPage } from "./Pages/Errorpage";
 import { UserProfilePage } from "./Pages/UserProfilePage";
 import { Particle } from "./Components/particle";
 import SplashScreen from "./Components/SplashScreen";
+import TopBar from "./Components/TopBar";
+import Footer from "./Components/Footer";
 function App() {
   const initialState = useContext(Store);
   const [state, dispatch] = useReducer(Reducer, initialState);
@@ -43,25 +46,25 @@ function App() {
         component={EventDescription}
       />
       <Route path="/user" exact component={UserProfilePage} />
-
+      <Route path="/sponsors" exact component={Sponsors} />
       <Route path="*" component={ErrorPage} />
     </Switch>
   );
 
   setTimeout(() => {
     setSplash(false);
-  }, 3000);
+  }, 2000);
 
   if (splash) return <SplashScreen />;
 
   return (
     <Store.Provider value={[state, dispatch]}>
       <div className="App">
-        <div className="particle-style">
-          <Router>{routes}</Router>
-        </div>
-
-        <Particle />
+        <Router>
+          <TopBar />
+          {routes}
+        </Router>
+        <Footer />
       </div>
     </Store.Provider>
   );

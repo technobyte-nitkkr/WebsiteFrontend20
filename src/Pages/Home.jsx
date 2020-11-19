@@ -1,33 +1,12 @@
-import { React, useEffect} from "react";
-import { Link } from 'react-router-dom';
+import { React } from "react";
+import { Link } from "react-router-dom";
 import LoginButton from "../Components/LoginButton";
-import axios from 'axios';
-import Key from '../config.keys';
+import { Particle } from "../Components/particle";
+import TimelineHome from '../Pages/TimelineHome';
 const Home = () => {
-  useEffect(()=>{
-    const getEventTimelines = async () => {
-      try {
-          const res = await axios.get( `${Key.BASE_API}/events/timeline`);
-          console.log(res)
-      } catch (error) {
-          console.log(error);
-      }
-  };
-  getEventTimelines();
-  },[]);
   return (
     <div>
-      <div>
-
-    
-        <Link to='/user'>
-
-          <div className="bar">
-            <i className="primary md fa fa-user" aria-hidden="true"></i>
-         
-          </div>
-        </Link>
-      </div>
+<div className="particle-style">
       <div className="center">
         <h1 className="main-title Altius">ALTIUS</h1>
       </div>
@@ -61,6 +40,12 @@ const Home = () => {
           <div>Devs</div>
         </div>
       </div>
+
+</div>
+<TimelineHome />
+  
+      <Particle/>
+
     </div>
   );
 };

@@ -1,3 +1,5 @@
 module.exports = {
-    LOGIN: "LOGIN"
+    LOGIN: "LOGIN",
+    LOGOUT: 'LOGOUT',
+    AUTH: 'AUTH_LOADING'
 }
