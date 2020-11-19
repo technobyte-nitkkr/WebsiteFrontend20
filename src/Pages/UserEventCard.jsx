@@ -11,6 +11,7 @@ const UserEventCard = ({ props }) => {
                             width:
                                 '300px', height: '300px'
                         }} />
+                        <h1 style={{backgroundColor:'white'}}>Encoder</h1>
                     </div>
                     <div className="flip-card-back">
                         <h1>Excal</h1>
