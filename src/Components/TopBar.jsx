@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Store from "../Store/Store";
 import LoginButton from "./LoginButton";
 import { GoogleLogout } from "react-google-login";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import Keys from "../config.keys";
 import { LOGOUT } from "../Store/Types";
 const TopBar = (props) => {
@@ -18,7 +18,7 @@ const TopBar = (props) => {
     <>
       <div className="top-bar">
         <div className="top-title">
-          <p className="t-title">Altius/2020</p>
+          <Link to = '/' style={{textDecoration: 'none'}}><p className="t-title">Altius/2020</p></Link>
         </div>
 
         <div className="flex-it">
