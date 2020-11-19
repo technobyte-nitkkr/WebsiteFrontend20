@@ -1,7 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { format } from "date-fns";
 import axios from "axios";
-import "./eventPage.css";
 import Key from "../config.keys";
 import "react-dropdown/style.css";
 const Events = (props) => {
@@ -32,10 +31,10 @@ const Events = (props) => {
   return data.length == 0 ? (
     <div></div>
   ) : (
-    <div style={{ backgroundColour: "black" }} className="event-wrapper">
+    <div className="event-wrapper">
       <header>
         <h1 className="category-title">
-          Category Name
+          {category}
           {width > 980 ? (
             <span></span>
           ) : (
@@ -62,6 +61,7 @@ const Events = (props) => {
           >
             {data.map((item, index) => (
               <div
+                className="event-name"
                 key={index}
                 onClick={() => {
                   setIndex(index);
@@ -86,49 +86,48 @@ const Events = (props) => {
           <h2>{data[currIndex].eventName}</h2>
           <p
             style={{
-              fontSize: "1.5rem",
+              fontSize: "1.1rem",
             }}
           >
             {" "}
             {data[currIndex].description}
           </p>
           <br />
-          <h2>
+          <p>
             <i
-              className="primary md fa fa-calendar"
+              className="primary md fa fa-calendar icon-i"
               aria-hidden="true"
-              style={{ marginRight: "2rem" }}
             ></i>
-
+            &nbsp;
             {format(new Date(data[currIndex].startTime), "dd MMM, yyyy")}
-          </h2>
+          </p>
           <br></br>
-          <h2>
+          <p>
             <i
-              className="primary md fas fa-clock"
+              className="primary md fas fa-clock icon-i"
               aria-hidden="true"
-              style={{ marginRight: "2rem" }}
             ></i>
+            &nbsp;
             {format(new Date(data[currIndex].startTime), "hh:mm aa")} -
             {format(new Date(data[currIndex].endTime), "hh:mm aa")}
-          </h2>
+          </p>
           <br />
 
-          <h2>
+          <p>
             <span style={{ marginRight: ".4rem" }}>Prize - </span>
             1k
-          </h2>
+          </p>
           <br />
           <br />
           <h2>Coordinators</h2>
           <br></br>
           {data[currIndex].coordinators.map((item, index) => (
-            <h2 key={index}>
+            <p key={index}>
               <span style={{ marginRight: ".4rem" }}>
                 {item.coordinator_name} -{" "}
               </span>
               {item.coordinator_number}
-            </h2>
+            </p>
           ))}
 
           <br />

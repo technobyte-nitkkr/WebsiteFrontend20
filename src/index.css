@@ -314,7 +314,8 @@ body {
     padding: 5px;
     width: 100%;
     margin: 20px auto;
-    background-color: black;
+    width: 85%;
+    margin: auto;
 }
 
 .event-columns {
@@ -327,7 +328,6 @@ body {
 .event-column {
     cursor: pointer;
     flex: 1;
-    margin: 2px;
     padding: 10px;
 }
 
@@ -337,8 +337,14 @@ body {
 }
 
 .event-column:last-child {
-    margin-right: 0;
+    margin-right: 1rem;
+    margin-left: 2rem;
     border-right: 0px;
+}
+
+.category-title {
+    font-weight: 600;
+    font-size: 3.5em;
 }
 
 .event-register-button {
@@ -351,13 +357,28 @@ body {
     margin: auto;
 }
 
+.event-name>h2 {
+    font-size: 1.1em;
+}
+
+.event-name {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.event-name:hover {
+    background-color: #1a1e20;
+}
+
 ::-webkit-scrollbar {
     width: 1px;
 }
 
 @media screen and (max-width: 980px) {
     .event-column:first-child {
-        width: 100%;
+        max-width: 100%;
     }
     .event-columns .event-column {
         margin-bottom: 5px;
@@ -368,13 +389,19 @@ body {
     }
     .event-columns .event-column:last-child {
         flex-basis: 100%;
-        margin: 0;
+        margin: 2rem;
     }
 }
 
 @media screen and (max-width: 680px) {
     .event-column:first-child {
         max-width: 100%;
+    }
+    .body {
+        font-size: 1.3rem;
+    }
+    .category-title {
+        font-size: 2rem;
     }
     .event-columns .event-column {
         flex-basis: 100%;
