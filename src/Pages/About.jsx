@@ -21,7 +21,7 @@ import { Carousel, Card, Container, Row, Col } from "react-bootstrap";
 const About = () => {
   return (
     <div className="about-div">
-      <h1 className="headlineabout">{info.headline}</h1>
+      <h1 className="guestheading">{info.headline}</h1>
       <div className="aboutscroll">
         <Carousel>
           <Carousel.Item>

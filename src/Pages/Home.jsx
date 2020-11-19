@@ -19,7 +19,7 @@ const Home = () => {
           </div>
           <div className="m-item">
             <div>
-              <Link to="/category">
+              <Link to="/categories">
                 <div className="circle"></div>
               </Link>
             </div>

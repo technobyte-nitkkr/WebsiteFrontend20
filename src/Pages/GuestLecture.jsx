@@ -54,8 +54,21 @@ const GuestLecture = () => {
               </Col>
               <Col xl={9} md={6} sm={12}>
                 <h2 className="guestname">{item.name}</h2>
-                <h5>Date: {item.date}</h5>
-                <h5>Time: {item.time}</h5>
+                <h5>
+                  <i
+                    className="primary md fa fa-calendar icon-i"
+                    aria-hidden="true"
+                  ></i>{" "}
+                  {item.date}
+                </h5>
+                <h5>
+                  {" "}
+                  <i
+                    className="primary md fas fa-clock icon-i"
+                    aria-hidden="true"
+                  ></i>{" "}
+                  {item.time}
+                </h5>
                 <p>{item.desc}</p>
               </Col>
             </Row>
