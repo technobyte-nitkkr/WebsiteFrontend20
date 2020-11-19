@@ -26,6 +26,10 @@ cursor: pointer;
   border-right: 0px;
 
 }
+.category-title{
+  font-weight: bold;
+  
+}
 .event-register-button{
     background-color: #0EF37F;
     color:#0e0e0e;
@@ -52,7 +56,7 @@ cursor: pointer;
   }
   .event-columns .event-column:last-child {
     flex-basis: 100%;
-    margin: 0;
+    margin:2rem;
   }
 }
 @media screen and (max-width: 680px) {
@@ -61,6 +65,17 @@ cursor: pointer;
   max-width: 100%;
   
 }
+.body{
+  font-size: 1.3rem;
+}
+
+.category-title{
+  font-size: 2rem;
+  
+}
+
+
+
   .event-columns .event-column {
     flex-basis: 100%;
     margin: 0 0 5px 0;
