@@ -2,7 +2,6 @@
   padding: 5px;
   width: 100%;
   margin: 20px auto;
-  background-color: black;
 }
 .event-columns {
   display: flex;
@@ -14,7 +13,6 @@
 .event-column {
 cursor: pointer;
   flex: 1;
-  margin: 2px;
   padding: 10px;
 }
 .event-column:first-child{
@@ -23,8 +21,10 @@ cursor: pointer;
   
 }
 .event-column:last-child {
-  margin-right: 0;
+  margin-right: 1rem;
+  margin-left:2rem;
   border-right: 0px;
+
 }
 .event-register-button{
     background-color: #0EF37F;
@@ -41,7 +41,7 @@ cursor: pointer;
 @media screen and (max-width: 980px) {
   
 .event-column:first-child{
-  width: 100%;
+  max-width: 100%;
 }
     .event-columns .event-column {
     margin-bottom: 5px;

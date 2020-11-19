@@ -35,7 +35,9 @@ const Events = props => {
             <div style={{ backgroundColour: 'black' }} className="event-wrapper">
 
                 <header>
-                    <h1>Category Name
+                    <h1 style={{
+                        fontWeight:'bold',
+                    }}>Category Name
                {width > 980 ? <span></span> : <span onClick={() => {
                             setIsVisible(!isVisible);
                         }} style={{ float: 'right' }}> ☰</span>
@@ -58,7 +60,8 @@ const Events = props => {
                                     }
                                      }>
 
-                                        <h2>{item.eventName} </h2>
+                                        <h2>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i> {item.eventName} </h2>
                                         <br />
                                     </div>
                                 )}
@@ -66,7 +69,7 @@ const Events = props => {
                         </div>:<span></span> }
 
 
-                    <div className="event-column">
+                    <div className="event-column" >
 
                         <h2>{data[currIndex].eventName}</h2>
                         <p style={{
