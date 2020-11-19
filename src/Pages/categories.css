@@ -119,6 +119,44 @@ body {
   transition: 0.4s ease-out;
 }
 
+@media (max-width:800px) {
+  .card {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: #121B20;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+
+  }
+  .card:not(:first-child) {
+   margin-top: -140px;
+   margin-left:0px;
+   
+  }
+  .card:hover ~ .card {
+    position: relative;
+    left:0px;
+    /* top: -120px; */
+    transition: 0.4s ease-out;
+  }
+  .card:hover {
+    transform: translateY(-140px);
+    transition: 0.4s ease-out;
+  }
+  .container1 {
+  
+    margin-left:10%;
+    width: 80%;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: block;
+  }
+}
+
 .title {
   color: white;
   font-weight: 300;
@@ -183,3 +221,4 @@ svg {
   stroke-dashoffset: 100;
   transition: 0.6s ease-out;
 }
+
