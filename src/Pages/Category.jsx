@@ -31,7 +31,7 @@ const Category = () => {
     //     categoriesString.push(<div className='c-item'> <div><div className='circle'></div></div><div> {value} </div>);
     // }
     if (data.categories == undefined)
-        data.categories = ['Astronomy', 'Design', 'astronomy', 'astronomy', 'astronomy', 'astronomy', 'astronomy', 'astronomy', 'astronomy',];
+        data.categories = ["Astronomy", "Design", "Informals", "Managerial", "Online-Events", "Papyrus-Vitae", "Programming", "Quizzes", "Robotics"];
     console.log(categoriesString);
     data.categories.map(cat => console.log(cat))
     return (
@@ -44,7 +44,7 @@ const Category = () => {
             <div className="center">
                 <h1 className="category-title">CATEGORIES</h1>
             </div>
-            <div className="menu-categories">
+            {/* <div className="menu-categories">
                 {data.categories.map(cat => (
                     <div>
                         <div className='c-item'>
@@ -54,6 +54,23 @@ const Category = () => {
                             <div>
                                 {cat}
                             </div>
+                        </div>
+                    </div>
+                ))}
+            </div> */}
+            <br></br>
+            <div class="container1">
+                {data.categories.map(cat => (
+                    <div className="card">
+                        <h3 className="title">{cat}</h3>
+                        <div className="bar">
+                            <div className="emptybar"></div>
+                            <div className="filledbar"></div>
+                        </div>
+                        <div className="circle1">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <circle className="stroke" cx="60" cy="60" r="50" />
+                            </svg>
                         </div>
                     </div>
                 ))}
