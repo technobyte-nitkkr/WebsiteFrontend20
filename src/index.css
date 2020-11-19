@@ -154,6 +154,7 @@ body {
 .guestimg {
     object-fit: cover;
     max-width: 80%;
+    border-radius: 3rem;
 }
 
 .login-button {
@@ -307,5 +308,4 @@ body {
     width: 45%;
     height: auto;
     object-fit: cover;
-    overflow: hidden;
 }

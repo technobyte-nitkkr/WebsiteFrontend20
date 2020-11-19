@@ -46,17 +46,17 @@ const GuestLecture = () => {
         <h1 className="guestheading">GUEST LECTURES</h1>
       </div>
       <div>
-        <Container>
+        <Container style={{display: "block",maxWidth:"98%"}}>
           {items.map((item, index) => (
-            <Row className="guestrow">
-              <Col xl={6} md={6} sm={12}>
+            <Row className="guestrow" style={{marginTop:"0"}}>
+              <Col xl={3} md={6} sm={12}>
+                <img src={item.imageUrl} alt="img1" className="guestimg" />
+              </Col>
+              <Col xl={9} md={6} sm={12}>
                 <h2 className="guestname">{item.name}</h2>
                 <h5>Date: {item.date}</h5>
                 <h5>Time: {item.time}</h5>
                 <p>{item.desc}</p>
-              </Col>
-              <Col xl={6} md={6} sm={12}>
-                <img src={item.imageUrl} alt="img1" className="guestimg" />
               </Col>
             </Row>
           ))}
