@@ -41,10 +41,9 @@
 .aboutimg
 {
     object-fit: cover;
-    padding-left: 3%;
-    width: 97%;
-    max-height: 600px;
-    border-radius: 2rem;
+    padding-left: 10%;
+    width: 90%;
+    max-height: 500px;
 }
 .aboutscroll
 {
