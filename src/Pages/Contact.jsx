@@ -39,7 +39,7 @@ function Contact() {
                         <Container style={{display: "block",maxWidth:"98%"}}>
                             <Row>
                                 {item.people.map((peeps,ind)=>(
-                                    <Col>
+                                    <Col xl={3} md={3} sm={6}>
                                         <animated.div
                                             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
                                             onMouseLeave={() => set({ xys: [0, 0, 1] })}
@@ -48,7 +48,7 @@ function Contact() {
                                         >
                                         <Card bg={"dark"} text={"white"}  style={{width:"200px",height:"250px"}}>
                                             <Card.Header>
-                                                <img src={peeps.imageUrl} className="contactimg" style={{ backgroundImage : "url('https://i.pinimg.com/600x315/80/63/35/8063359effd01b990e653bb32a83485d.jpg')",backgroundSize:"80px 100px" } }/>
+                                                <img src={peeps.imageUrl} alt="" className="contactimg" style={{ backgroundImage : "url('https://i.pinimg.com/600x315/80/63/35/8063359effd01b990e653bb32a83485d.jpg')",backgroundSize:"80px 100px" } }/>
                                             </Card.Header>
                                             <Card.Body>
                                               <Card.Title><h5>{peeps.name}</h5>  </Card.Title>
