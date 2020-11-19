@@ -644,7 +644,6 @@ body {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border: solid .1rem #0EF37F;
     margin-top: 0rem;
     margin-left: .5rem;
     margin-right: .5rem;
@@ -683,6 +682,10 @@ body {
 }
 
 .holder {
-    width: 80%;
+    width: 85%;
     margin: auto;
+}
+
+.holder>p {
+    font-size: 1.1em !important;
 }

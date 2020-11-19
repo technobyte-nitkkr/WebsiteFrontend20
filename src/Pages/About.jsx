@@ -148,7 +148,7 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-      <h1 className="headlineabout smaller">Watch video for more info...</h1>
+      <h1 className="headlineabout smaller">Watch video for more info.</h1>
       <iframe
         width="80%"
         height="500vh"
