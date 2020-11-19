@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.profile {
+    
+  animation: loadProfile 0.6s ease-in-out;
+  animation-fill-mode: both;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 750px;
+  max-width: 900px;
+}
+
+.profile-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 30px 50px -20px rgba(14, 0, 47, 0.21);
+  width: calc(100% - 75px);
+  height: calc(100% - 110px);
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+} 
+
+.profile-image {
+  animation: loadProfileImage 1s ease-in-out 0.5s;
+  animation-fill-mode: both;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 25px 45px -20px  #121B20,
+    inset 0 0px 40px#121B20;
+  width: 45%;
+  flex: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #121B20;
+  opacity: 0.8;
+  mix-blend-mode: screen;
+}
+
+
+.profile-info {
+  margin-top: 120px;
+  padding: 8% 8% 2% 8%;
+  position: relative;
+}
+
+.profile-info h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0.7rem;
+  position: absolute;
+  animation-fill-mode: both;
+}
+
+.profile h1.first-name {
+  animation: titleEffect 1s cubic-bezier(0,0.2,0.4,1);
+  top: -115px;
+  left: -85px;
+} 
+
+.profile h1.second-name {
+  animation: titleEffect 1s cubic-bezier(0,0,0.3,1);
+  top: -50px;
+  left: -45px;
+  
+  
+}
+
+.profile-info h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+.profile-info h2 {
+  color: #121B20;
+}
+
+.profile-info p {
+  line-height: 1.3rem;
+  font-size:1.2rem;
+  color: #121B20
+}
+
+.user-events{
+  display: flex;
+  align-self: start;
+  align-content: center;
+  justify-content: center;
+  flex-wrap:wrap;
+  gap: 5rem;
+
+}
+
+
+
+
+
+@media only screen and (max-aspect-ratio: 4/7) and (max-width: 600px) {
+  .profile {
+    margin: 3%;
+    height: 97%;
+  }
+  .container {
+    height: 86%;
+    flex-direction: column;
+  }
+  .profile-image {
+    height: 40%;
+    width: calc(100% - 90px);
+  }
+  .profile-bg {
+    width: 100%;
+  }
+  .profile h1.first-name {
+    left: 10px;
+  }
+  .profile h1.second-name {
+    left: 60px;
+  }
+}
+
+@media screen and (min-aspect-ratio: 4/7) {
+  .profile {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes loadProfile {
+ from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+ to {
+     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes loadProfileImage {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+ to {
+     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes titleEffect {
+ from {
+   opacity:0;
+     transform: translateX(-75px);
+  }
+  to {
+     transform: translateX(0px);
+    opacity: 1;
+  }
+}

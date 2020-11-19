@@ -18,9 +18,7 @@ const TopBar = (props) => {
     <>
       <div className="top-bar">
         <div className="top-title">
-          <Link className="remove-link-styles" to="/">
-            <p className="t-title">Altius/2020</p>
-          </Link>
+          <Link to = '/' style={{textDecoration: 'none'}}><p className="t-title">Altius/2020</p></Link>
         </div>
 
         <div className="flex-it">

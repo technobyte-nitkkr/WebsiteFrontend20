@@ -4,6 +4,7 @@ import LoginButton from "../Components/LoginButton";
 import { Particle } from "../Components/particle";
 import TimelineHome from '../Pages/TimelineHome';
 const Home = () => {
+
   return (
     <div>
 <div className="particle-style">
@@ -43,7 +44,6 @@ const Home = () => {
 
 </div>
 <TimelineHome />
-  
       <Particle/>
 
     </div>

@@ -3,7 +3,7 @@ import axios from "axios";
 import Key from "../config.keys";
 import { Row, Col, Container } from "react-bootstrap";
 
-// import back from "../videos/back2.mp4";
+import back from "../videos/back2.mp4";
 
 const GuestLecture = () => {
   const [items, setData] = useState([]);
@@ -24,7 +24,7 @@ const GuestLecture = () => {
   console.log(items);
   return (
     <div className="mainbox">
-      {/* <video
+      <video
         autoPlay
         loop
         muted
@@ -41,34 +41,21 @@ const GuestLecture = () => {
         }}
       >
         <source src={back} type="video/mp4" />
-      </video> */}
+      </video>
       <div className="mainguest">
         <h1 className="guestheading">GUEST LECTURES</h1>
       </div>
       <div>
-        <Container style={{ display: "block", maxWidth: "98%" }}>
+        <Container style={{display: "block",maxWidth:"98%"}}>
           {items.map((item, index) => (
-            <Row className="guestrow" style={{ marginTop: "0" }}>
+            <Row className="guestrow" style={{marginTop:"0"}}>
               <Col xl={3} md={6} sm={12}>
                 <img src={item.imageUrl} alt="img1" className="guestimg" />
               </Col>
               <Col xl={9} md={6} sm={12}>
                 <h2 className="guestname">{item.name}</h2>
-                <h5>
-                  <i
-                    className="primary md fa fa-calendar icon-i"
-                    aria-hidden="true"
-                  ></i>{" "}
-                  {item.date}
-                </h5>
-                <h5>
-                  {" "}
-                  <i
-                    className="primary md fas fa-clock icon-i"
-                    aria-hidden="true"
-                  ></i>{" "}
-                  {item.time}
-                </h5>
+                <h5>Date: {item.date}</h5>
+                <h5>Time: {item.time}</h5>
                 <p>{item.desc}</p>
               </Col>
             </Row>

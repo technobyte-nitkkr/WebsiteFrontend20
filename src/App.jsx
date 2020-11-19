@@ -10,6 +10,7 @@ import { Devs } from "./Pages/Devs";
 import { EventDescription } from "./Pages/EventDescription";
 import { Events } from "./Pages/Events";
 import { Queries } from "./Pages/Queries";
+import { Sponsers } from "./Pages/Sponsers";
 import { Category } from "./Pages/Category";
 import { GuestLecture } from "./Pages/GuestLecture";
 import { ErrorPage } from "./Pages/Errorpage";
@@ -17,7 +18,6 @@ import { UserProfilePage } from "./Pages/UserProfilePage";
 import { Particle } from "./Components/particle";
 import SplashScreen from "./Components/SplashScreen";
 import TopBar from "./Components/TopBar";
-import Footer from "./Components/Footer";
 function App() {
   const initialState = useContext(Store);
   const [state, dispatch] = useReducer(Reducer, initialState);
@@ -38,6 +38,8 @@ function App() {
 
       <Route path="/categories" exact component={Category} />
 
+      <Route path="/sponsers" exact component={Sponsers} />
+
       <Route path="/events/:category" exact component={Events} />
 
       <Route
@@ -46,7 +48,7 @@ function App() {
         component={EventDescription}
       />
       <Route path="/user" exact component={UserProfilePage} />
-      <Route path="/sponsors" exact component={Sponsors} />
+    <Route path='/sponsors' exact component={Sponsors}/>
       <Route path="*" component={ErrorPage} />
     </Switch>
   );
@@ -60,13 +62,16 @@ function App() {
   return (
     <Store.Provider value={[state, dispatch]}>
       <div className="App">
-        <Router>
-          <TopBar />
-          {routes}
-        </Router>
-        <Footer />
-      </div>
-    </Store.Provider>
+
+
+          <Router>
+           
+          <TopBar /> 
+            {routes}</Router>
+
+        </div>
+
+  </Store.Provider>
   );
 }
 
