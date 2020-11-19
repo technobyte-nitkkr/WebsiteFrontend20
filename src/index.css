@@ -689,3 +689,14 @@ body {
 .holder>p {
     font-size: 1.1em !important;
 }
+
+.remove-link-styles {
+    text-decoration: none !important;
+    color: var(--primary);
+    transition: 0.5s;
+}
+
+.remove-link-styles:hover {
+    color: #0EF37F;
+    opacity: 0.8;
+}
