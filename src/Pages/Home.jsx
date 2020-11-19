@@ -43,7 +43,11 @@ const Home = () => {
       </div>
 
 </div>
+<div style={{overflowX:'scroll'}}>
+  
 <TimelineHome />
+  
+  </div>
       <Particle/>
 
     </div>
