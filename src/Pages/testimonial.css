@@ -1,0 +1,31 @@
+.box-triangle
+{
+    width: 94%;
+    padding: .2rem;
+    padding-top: .1rem;
+    justify-content: center;
+    margin-left: .4rem;
+    margin-top: 1rem;
+}
+
+.testimonial
+{
+    text-align: center;
+}
+.testCard
+{
+    height: 400px;
+    background-color :#121B20;
+    border-radius: .6rem;
+    margin-bottom: 1rem;
+}
+.testimg
+{
+    height: 80px;
+    width: 80px;
+    border-radius: 3rem;
+}
+.testcontainer
+{
+    max-width: 98%;
+}

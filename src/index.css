@@ -357,6 +357,7 @@ body {
 
 
 
+
 /* dev page css */
 #main{
   width: 105%;
@@ -455,3 +456,159 @@ svg{
   cursor: pointer;
   object-fit: contain;
 }
+=======
+/*  category page CSS  */
+
+.category-main-title {
+    color: var(--primary);
+    margin-top: 10vh;
+    font-size: 7vw;
+    font-weight: 500 !important;
+
+}
+
+.category-container {
+  
+  margin-left:5%;
+  width: 90%;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.category-card {
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  background-color: #121B20;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.category-card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.category-card:hover {
+  transform: translateY(-40px);
+  transition: 0.4s ease-out;
+}
+
+.category-card:hover ~ .category-card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+@media (max-width:800px) {
+  .category-card {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: #121B20;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+
+  }
+  .category-card:not(:first-child) {
+   margin-top: -200px;
+   margin-left:0px;
+   
+  }
+  .category-card:hover ~ .category-card {
+    position: relative;
+    left:0px;
+    /* top: -120px; */
+    transition: 0.4s ease-out;
+  }
+  .category-card:hover {
+    transform: translateY(-100px);
+    transition: 0.4s ease-out;
+  }
+  .category-container {
+  
+    margin-left:10%;
+    width: 80%;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: block;
+  }
+  .category-main-title{
+    font-size: 12vw;
+  }
+}
+
+.category-subtitle {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.category-bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #0EF37F;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.category-card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.category-circle {
+  background: #0EF37F;
+  border-radius: 50%;
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  top: 45%;
+  left: calc(25%);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+
+.category-card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+
+.guestheading
+{
+    font-size: 3rem;
+}
+
