@@ -24,12 +24,16 @@ const Home = () => {
             <div>Ask Query</div>
           </div>
           <div className="m-item">
-            <Link to='/contact'><div className="circle" /></Link>
-            <div>Contact</div>
-          </div>
-          <div className="m-item">
             <Link to='/lectures'><div className="circle" /></Link>
             <div>Guest Lectures</div>
+          </div>
+          <div className="m-item">
+            <Link to='/testimonial'><div className="circle" /></Link>
+            <div>Testimonial</div>
+          </div>
+          <div className="m-item">
+            <Link to='/contact'><div className="circle" /></Link>
+            <div>Contact</div>
           </div>
           <div className="m-item">
             <Link to='/sponsers'><div className="circle" /></Link>

@@ -5,9 +5,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  useHistory,
 } from "react-router-dom";
-import { Sponsors } from "./Pages/sponsors";
 
 import Reducer from "./Store/Reducer";
 import { Home } from "./Pages/Home";
@@ -17,12 +15,12 @@ import { Devs } from "./Pages/Devs";
 import { EventDescription } from "./Pages/EventDescription";
 import { Events } from "./Pages/Events";
 import { Queries } from "./Pages/Queries";
-import { Sponsers } from "./Pages/Sponsers";
+import { Sponsors } from "./Pages/Sponsors";
 import { Category } from "./Pages/Category";
+import { Testimonial } from "./Pages/Testimonial";
 import { GuestLecture } from "./Pages/GuestLecture";
 import { ErrorPage } from "./Pages/Errorpage";
 import { UserProfilePage } from "./Pages/UserProfilePage";
-import { Particle } from "./Components/particle";
 import SplashScreen from "./Components/SplashScreen";
 import TopBar from "./Components/TopBar";
 import Footer from "./Components/Footer";
@@ -46,7 +44,11 @@ function App() {
 
       <Route path="/categories" exact component={Category} />
 
-      <Route path="/sponsers" exact component={Sponsers} />
+      <Route path="/sponsors" exact component={Sponsors} />
+
+      <Route path="/user" exact component={UserProfilePage} />
+
+      <Route path="/testimonial" exact component={Testimonial} />
 
       <Route path="/events/:category" exact component={Events} />
 
@@ -55,8 +57,6 @@ function App() {
         exact
         component={EventDescription}
       />
-      <Route path="/user" exact component={UserProfilePage} />
-      <Route path="/sponsors" exact component={Sponsors} />
       <Route path="*" component={ErrorPage} />
     </Switch>
   );
