@@ -29,11 +29,11 @@ const Devs = () => {
             />
           </svg>
           <div>
-            <span id="step1" onClick = {() => handleClick(1004, 'img-2.jpg', '-350px')}></span>
-            <span id="step2" onClick = {() => handleClick(753, 'img-3.jpg', '-800px')}></span>
-            <span id="step3" onClick = {() => handleClick(502, 'img-4.jpg', '-1250px')}></span>
-            <span id="step4" onClick = {() => handleClick(251, 'img-5.jpg', '-1700px')}></span>
-            <span id="step5" onClick = {() => handleClick(0, 'img-1.jpg', '100px')}></span>
+            <span className="span-dev" id="step1" onClick = {() => handleClick(1004, 'img-2.jpg', '-350px')}></span>
+            <span className="span-dev" id="step2" onClick = {() => handleClick(753, 'img-3.jpg', '-800px')}></span>
+            <span className="span-dev" id="step3" onClick = {() => handleClick(502, 'img-4.jpg', '-1250px')}></span>
+            <span className="span-dev" id="step4" onClick = {() => handleClick(251, 'img-5.jpg', '-1700px')}></span>
+            <span className="span-dev" id="step5" onClick = {() => handleClick(0, 'img-1.jpg', '100px')}></span>
           </div>
           <div className="user-box" id="userBox" style = {{top: circleData.userBox}}>
             <div className="user">
@@ -51,14 +51,14 @@ const Devs = () => {
             </div>
             <div className="user">
               <img className="user-img" src="/images/person-2.jpg" alt=""/>
-              <h1>Carl Perry</h1>
-              <a href="https://github.com/sourabhsing3" target="_blank">
+              <h1>Anuj Mehta</h1>
+              <a href="https://github.com/Anuj-0911" target="_blank">
                 <img className="social-images" src={img1}  alt=""/>
               </a>
-              <a href="https://www.linkedin.com/in/sourabh-singh-a77547190/" target="_blank">
+              <a href="https://www.linkedin.com/in/anuj-mehta-b35766191/" target="_blank">
                 <img className="social-images" src={img2} alt=""/>
               </a>
-              <a href="https://www.instagram.com/_sourabhsingh/" target="_blank">
+              <a href="https://www.instagram.com/anuj__0911/" target="_blank">
                 <img className="social-images" src={img3} />
               </a>
             </div>

@@ -389,7 +389,7 @@ svg{
     stroke-dashoffset: 1256;
     transition: 1s;
 }
-span{
+.span-dev{
     position: absolute;
     height: 10px;
     width: 10px;
