@@ -39,8 +39,6 @@ function App() {
 
       <Route path="/contact" exact component={Contact} />
 
-      <Route path="/query" exact component={Queries} />
-
       <Route path="/devs" exact component={Devs} />
 
       <Route path="/lectures" exact component={GuestLecture} />
@@ -76,6 +74,7 @@ function App() {
           <TopBar />
           {routes}
         </Router>
+        <Queries />
         <Footer />
       </div>
     </Store.Provider>
