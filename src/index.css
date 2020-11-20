@@ -21,12 +21,14 @@ MINOR GREY - #121B20
     --major-black: #0e0e0e !important;
     --font: 'Poppins' !important;
 }
+
 .particle-style {
     position: absolute;
     top: 0;
     width: 100%;
-    left:0;
+    left: 0;
 }
+
 body {
     background-color: var(--major-black) !important;
     color: #0EF37F !important;
@@ -207,7 +209,7 @@ body {
 .query-hd {
     font-size: 12vh;
     font-weight: 400 !important;
-    margin: 2vh auto;   
+    margin: 2vh auto;
     text-align: center;
 }
 
@@ -216,7 +218,9 @@ body {
     letter-spacing: 2px;
 }
 
-.form-container, .form-ele input, .form-ele textarea  {
+.form-container,
+.form-ele input,
+.form-ele textarea {
     font-size: 17px;
     width: 33vw;
     margin: 0 auto;
@@ -226,26 +230,29 @@ body {
     padding-bottom: 10px;
 }
 
-.form-ele textarea, .form-ele input {
+.form-ele textarea,
+.form-ele input {
     padding: 5px;
-    border-radius: 10px;   
+    border-radius: 10px;
     background-color: #121B20;
     color: #f4f4f4;
     border-style: none;
     font-family: "Ubuntu", sans-serif;
 }
 
-.form-ele textarea:focus, .form-ele input:focus {
+.form-ele textarea:focus,
+.form-ele input:focus {
     outline: none;
 }
 
-.form-ele input::placeholder, .form-ele textarea::placeholder {
+.form-ele input::placeholder,
+.form-ele textarea::placeholder {
     padding: 5px;
     color: #cccccc;
 }
 
-.query-feedback-box{
-    text-align: center;   
+.query-feedback-box {
+    text-align: center;
 }
 
 .query-send {
@@ -262,7 +269,7 @@ body {
     letter-spacing: 1px;
     background-color: transparent;
     cursor: pointer;
-    padding: 4px 20px; 
+    padding: 4px 20px;
     transition: all .35s;
 }
 
@@ -275,46 +282,54 @@ body {
     .form-ele textarea {
         width: 60vw;
         height: 20vh;
-    }    
-
+    }
     .form-ele input {
         width: 60vw;
     }
-
     .form-container {
         width: 60vw;
         margin: 0 auto;
     }
-
     .query-hd {
         font-size: 11vh;
     }
 }
 
-.splashscr
-{
+.splashscr {
     text-align: center;
     overflow: hidden;
 }
-.splashlogo
-{
+
+.splashlogo {
     width: 45%;
     height: auto;
     object-fit: cover;
 }
 
+
 /*contact page css */
 
-.contactimg
-{
+.contactimg {
     height: 100px;
     width: 100px;
 }
 
-
-.contactcard
-{
+.contactcard {
     margin-top: 1rem;
     border-radius: 1rem;
     text-align: center;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #0E0E0E;
+    display: flex;
+    justify-content: center;
+}
+
+.footer>div {
+    padding: 10px;
+    padding-top: 20px;
 }
