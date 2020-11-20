@@ -38,7 +38,7 @@ const Home = () => {
         </div>
         <div className="m-item">
           <div className="circle"></div>
-          <div>Devs</div>
+          <div>Sponsors</div>
         </div>
       </div>
 

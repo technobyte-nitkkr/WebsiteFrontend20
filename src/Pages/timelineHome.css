@@ -82,5 +82,11 @@
     color: #66DC71;
   }
 
+  @media screen and (max-height:762px){
+    .timeline{
+      display: none;
+    }
+  }
+
 
   

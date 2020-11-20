@@ -3,7 +3,7 @@ import './sponsors.css';
 import axios from 'axios';
 import Keys from "../config.keys";
 const Sponsors = () => {
-  var arr = ['left', 'bottom', 'right', 'top'];
+  var arr = ['left', 'right', 'top','bottom'];
   var [sponsorList, setSponsorList] = useState([]);
   useEffect(() => {
 
