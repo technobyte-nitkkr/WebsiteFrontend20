@@ -333,3 +333,15 @@ body {
     padding: 10px;
     padding-top: 20px;
 }
+
+.no-style-link {
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--primary);
+}
+
+.no-style-link:hover {
+    color: var(--primary);
+    opacity: 0.8;
+    text-decoration: none;
+}
