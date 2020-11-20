@@ -100,16 +100,6 @@ body {
 
 /* GUEST LECTURE CSS */
 
-.guestname:hover {
-    color: rgb(109, 184, 219);
-    font-size: 2.4rem;
-}
-
-.guestimg:hover {
-    margin-top: 1rem;
-    border-radius: 5rem;
-}
-
 .col {
     text-align: center;
 }
@@ -125,7 +115,14 @@ body {
 
 .mainbox {
     margin: 18px;
-    border: solid #0EF37F 2px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.guestheading {
+    font-weight: 600;
+    font-size: 5em;
 }
 
 .guestrow {
@@ -149,7 +146,6 @@ body {
 .guestimg {
     object-fit: cover;
     max-width: 80%;
-    border-radius: 3rem;
 }
 
 .login-button {
@@ -224,6 +220,7 @@ body {
     font-size: 17px;
     width: 33vw;
     margin: 0 auto;
+    color: var(--primary) !important;
 }
 
 .form-ele {
@@ -344,4 +341,16 @@ body {
     color: var(--primary);
     opacity: 0.8;
     text-decoration: none;
+}
+
+.about-div {
+    border: none !important;
+    width: 90% !important;
+    margin: auto !important;
+    margin-bottom: 100px !important;
+}
+
+.holder {
+    width: 80%;
+    margin: auto;
 }
