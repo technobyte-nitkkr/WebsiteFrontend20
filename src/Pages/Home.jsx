@@ -36,8 +36,8 @@ const Home = () => {
             <div>Contact</div>
           </div>
           <div className="m-item">
-            <Link to='/sponsers'><div className="circle" /></Link>
-            <div>Sponsers</div>
+            <Link to='/sponsors'><div className="circle" /></Link>
+            <div>Sponsors</div>
           </div>
           <div className="m-item">
             <Link to='/devs'><div className="circle" /></Link>
