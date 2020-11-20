@@ -15,6 +15,9 @@
 .testCard
 {
     height: 400px;
+    background-color :#121B20;
+    border-radius: .6rem;
+    margin-bottom: 1rem;
 }
 .testimg
 {

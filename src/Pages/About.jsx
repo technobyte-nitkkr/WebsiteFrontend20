@@ -22,7 +22,7 @@ import { Carousel, Card, Container, Row, Col } from "react-bootstrap";
 const About = () => {
   return (
     <div className="about-div">
-      <h1 className="guestheading">{info.headline}</h1>
+      <p className="guestheading">{info.headline}</p>
       <div className="aboutscroll">
         <Carousel>
           <Carousel.Item>
@@ -53,7 +53,7 @@ const About = () => {
       <Container>
         <Row>
           <Col>
-            <Card bg={"dark"} text={"white"} className="mb-2">
+            <Card bg={"dark"} text={"white"} className="mb-2 category-card">
               <Card.Header>
                 <img src={designic} alt="" className="iconimg" />
               </Card.Header>
@@ -67,7 +67,7 @@ const About = () => {
             </Card>
           </Col>
           <Col>
-            <Card bg={"dark"} text={"white"} className="mb-2">
+            <Card bg={"dark"} text={"white"} className="mb-2 category-card">
               <Card.Header>
                 <img src={technophiles} alt="" className="iconimg" />
               </Card.Header>
@@ -78,7 +78,7 @@ const About = () => {
             </Card>
           </Col>
           <Col>
-            <Card bg={"dark"} text={"white"} className="mb-2">
+            <Card bg={"dark"} text={"white"} className="mb-2 category-card">
               <Card.Header>
                 <img src={roboic} alt="" className="iconimg" />
               </Card.Header>
@@ -89,7 +89,7 @@ const About = () => {
             </Card>
           </Col>
           <Col>
-            <Card bg={"dark"} text={"white"} className="mb-2">
+            <Card bg={"dark"} text={"white"} className="mb-2 category-card">
               <Card.Header>
                 <img src={mangic} alt="" className="iconimg" />
               </Card.Header>
@@ -104,7 +104,7 @@ const About = () => {
       <Container>
         <Row>
           <Col>
-            <Card bg={"dark"} text={"white"} className="mb-2">
+            <Card bg={"dark"} text={"white"} className="mb-2 category-card">
               <Card.Header>
                 <img src={aeroic} alt="" className="iconimg" />
               </Card.Header>
@@ -115,7 +115,7 @@ const About = () => {
             </Card>
           </Col>
           <Col>
-            <Card bg={"dark"} text={"white"} className="mb-2">
+            <Card bg={"dark"} text={"white"} className="mb-2 category-card">
               <Card.Header>
                 <img src={payic} alt="" className="iconimg" />
               </Card.Header>
@@ -126,7 +126,7 @@ const About = () => {
             </Card>
           </Col>
           <Col>
-            <Card bg={"dark"} text={"white"} className="mb-2">
+            <Card bg={"dark"} text={"white"} className="mb-2 category-card">
               <Card.Header>
                 <img src={funic} alt="" className="iconimg" />
               </Card.Header>
@@ -137,7 +137,7 @@ const About = () => {
             </Card>
           </Col>
           <Col>
-            <Card bg={"dark"} text={"white"} className="mb-2">
+            <Card bg={"dark"} text={"white"} className="mb-2 category-card">
               <Card.Header>
                 <img src={quizic} alt="" className="iconimg" />
               </Card.Header>
