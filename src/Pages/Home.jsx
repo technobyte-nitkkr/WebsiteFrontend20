@@ -23,12 +23,6 @@ const Home = () => {
             <div>Category</div>
           </div>
           <div className="m-item">
-            <Link to="/query">
-              <div className="circle" />
-            </Link>
-            <div>Ask Query</div>
-          </div>
-          <div className="m-item">
             <Link to="/contact">
               <div className="circle" />
             </Link>
