@@ -6,13 +6,15 @@ import { withRouter, Link } from "react-router-dom";
 import Keys from "../config.keys";
 import { LOGOUT } from "../Store/Types";
 const TopBar = (props) => {
-  const [{ isAuth, authLoading }, dispatch] = useContext(Store);
+  const [{ isAuth, authLoading, user }, dispatch] = useContext(Store);
   const logout = () => {
     props.history.push("/");
     dispatch({
       type: LOGOUT,
     });
   };
+
+  console.log(user);
 
   return (
     <>
@@ -26,12 +28,12 @@ const TopBar = (props) => {
         <div className="flex-it">
           {isAuth ? (
             <div className="flex-it">
-              <div className="mr-2">
-                <i
-                  onClick={() => props.history.push("/user")}
-                  className="fa fa-user icon hover"
-                  aria-hidden="true"
-                ></i>
+              <div
+                className="mr-2 hover"
+                onClick={() => props.history.push("/user")}
+              >
+                <i className="fa fa-user icon" aria-hidden="true"></i>{" "}
+                {user.name}
               </div>
               <div>
                 <GoogleLogout
@@ -42,7 +44,7 @@ const TopBar = (props) => {
                       onClick={renderProps.onClick}
                       disabled={renderProps.disabled}
                     >
-                      {"Logout"}
+                      &nbsp; <i class="fas fa-sign-out-alt"></i>
                     </p>
                   )}
                   onLogoutSuccess={logout}
