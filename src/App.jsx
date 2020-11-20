@@ -22,7 +22,7 @@ import { Category } from "./Pages/Category";
 import { GuestLecture } from "./Pages/GuestLecture";
 import { ErrorPage } from "./Pages/Errorpage";
 import { UserProfilePage } from "./Pages/UserProfilePage";
-import  {Testimonial}  from "./Pages/Testimonial";
+import { Testimonial } from "./Pages/Testimonial";
 import { Particle } from "./Components/particle";
 import SplashScreen from "./Components/SplashScreen";
 import TopBar from "./Components/TopBar";
@@ -58,7 +58,7 @@ function App() {
       />
       <Route path="/user" exact component={UserProfilePage} />
       <Route path="/sponsors" exact component={Sponsors} />
-      <Route path="/testimonial" exact component={ Testimonial } />
+      <Route path="/testimonial" exact component={Testimonial} />
       <Route path="*" component={ErrorPage} />
     </Switch>
   );
