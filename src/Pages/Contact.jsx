@@ -48,7 +48,7 @@ function Contact() {
                                         >
                                         <Card bg={"dark"} text={"white"}  style={{width:"200px",height:"250px"}}>
                                             <Card.Header>
-                                                <img src={peeps.imageUrl} alt="" className="contactimg" style={{ backgroundImage : "url('https://i.pinimg.com/600x315/80/63/35/8063359effd01b990e653bb32a83485d.jpg')",backgroundSize:"80px 100px" } }/>
+                                               <img src={peeps.imageUrl} className="contactimg" onError={(e)=>{e.target.onerror = null; e.target.src="https://edmnations.com/wp-content/uploads/2020/04/2f0b3d610f3063f614c615eda2c13e18.jpg"}} style={{ backgroundImage : "url('https://i.pinimg.com/600x315/80/63/35/8063359effd01b990e653bb32a83485d.jpg')",backgroundSize:"80px 100px" } }/>
                                             </Card.Header>
                                             <Card.Body>
                                               <Card.Title><h5>{peeps.name}</h5>  </Card.Title>

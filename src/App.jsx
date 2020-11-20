@@ -1,5 +1,6 @@
 import { useContext, useReducer, useState } from "react";
 import Store from "./Store/Store";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -7,6 +8,7 @@ import {
   useHistory,
 } from "react-router-dom";
 import { Sponsors } from "./Pages/sponsors";
+
 import Reducer from "./Store/Reducer";
 import { Home } from "./Pages/Home";
 import { About } from "./Pages/About";
