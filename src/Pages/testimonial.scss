@@ -1,0 +1,103 @@
+// This mixin started with this CSS Tricks article :
+// https://css-tricks.com/snippets/css/css-triangle/
+
+@mixin add-triangle(
+  $direction: 'top',
+  $color: #0EF37F,
+  $size: 1em,
+  $offset: 50%,
+  $hover: 0
+) {
+  
+  position: relative;
+  margin: 0;
+  
+  // mapping in associative lists what we want (top, left..) to what it means
+  // in terms of property
+  $border-directions: (
+    'top': border-bottom-color,
+    'bottom': border-top-color,
+    'left': border-right-color,
+    'right': border-left-color,
+  );
+
+  $border-position: (
+    'top': bottom,
+    'bottom': top,
+    'left': right,
+    'right': left,
+  );
+
+  $border-offset: (
+    'top': left,
+    'bottom': left,
+    'left': top,
+    'right': top,
+  );
+  
+  // in order for the arg $offset to be from the middle of the triangle
+  $border-offset-adjust: (
+    'top': translate(-50%, 0),
+    'bottom': translate(-50%, 0),
+    'left': translate(0, -50%),
+    'right': translate(0, -50%),
+  );
+
+  &::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    margin: 0;
+    border: solid transparent;
+    #{map-get($border-offset, $direction)}: $offset;
+    
+    #{map-get($border-position, $direction)}: 100%;
+    
+    #{map-get($border-directions, $direction)}: $color;
+
+    @if $hover != 0 {
+      border-width: 0;
+      transition: border-width 0.5s;
+    } @else {
+      border-width: $size;
+    }
+
+    transform: #{map-get($border-offset-adjust, $direction)};
+  }
+
+  @if $hover != 0 {
+    &:hover::after {
+      content: '';
+      border-width: $size;
+    }
+  }
+}
+
+// ---- Mixin End ----
+
+
+// declarations and styling
+* {
+  box-sizing: border-box;
+}
+
+.box-triangle {
+  
+  // args : direction, bg color, width, offset, hover
+  @include add-triangle(bottom, black, .5em, 15%);
+  
+  color:#0EF37F;
+  background-color: black;
+  font-size: 29px;
+  margin: 0 4vw;
+  padding: 1em;
+  border-radius: 1rem;
+}
+
+.box-triangle:nth-of-type(2) {
+  // args : direction, bg color, width, offset, hover
+  @include add-triangle(right, #227093, 1.5em, 50%, 1);
+  
+  border: 5px solid black;
+}
