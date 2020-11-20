@@ -21,6 +21,7 @@ const UserProfilePage = () => {
 
                     }
                 });
+                console.log(res);
                 await setUserData([...res.data.data]);
 
 
