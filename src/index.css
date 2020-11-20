@@ -32,7 +32,7 @@ MINOR GREY - #121B20
 body {
     background-color: var(--major-black) !important;
     color: #0EF37F !important;
-   font-family: 'Poppins', sans-serif !important;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 .primary {
