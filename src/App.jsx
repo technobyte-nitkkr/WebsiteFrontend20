@@ -21,6 +21,7 @@ import { Testimonial } from "./Pages/Testimonial";
 import { GuestLecture } from "./Pages/GuestLecture";
 import { ErrorPage } from "./Pages/Errorpage";
 import { UserProfilePage } from "./Pages/UserProfilePage";
+import { Particle } from "./Components/particle";
 import SplashScreen from "./Components/SplashScreen";
 import TopBar from "./Components/TopBar";
 import Footer from "./Components/Footer";
