@@ -13,7 +13,7 @@ function Testimonial() {
         <Row>
           {reviews.data.map((item,index)=>(
             <Col xl={3} md={3} sm={12}>
-              <Card className="testCard">
+              <Card className="testCard category-card">
                   <div className="box-triangle">
                     <h3>“</h3>
                     <p style={{fontSize:"15px"}}>
