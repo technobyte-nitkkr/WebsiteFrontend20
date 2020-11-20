@@ -19,11 +19,11 @@ const Events = props => {
                 const res = await axios.get(
                     `${Key.BASE_API}/events/description?eventCategory=${category}`,
                 );
-              //  console.log(res.data.data);
+                //  console.log(res.data.data);
                 setData([...res.data.data.events]);
             } catch (error) {
                 setError(error);
-                
+
                 console.log(error);
             }
         };
@@ -34,8 +34,8 @@ const Events = props => {
             <div style={{ backgroundColour: 'black' }} className="event-wrapper">
 
                 <header>
-                    <h1 className='category-title'>Category Name
-               {width > 980 ? <span></span> : <span onClick={() => {
+                    <h1 className='category-title'>{data[0].eventCategory}
+                        {width > 980 ? <span></span> : <span onClick={() => {
                             setIsVisible(!isVisible);
                         }} style={{ float: 'right' }}>
                             {(isVisible) ? <i className="fa fa-times" aria-hidden="true"></i> :

@@ -21,12 +21,14 @@ MINOR GREY - #121B20
     --major-black: #0e0e0e !important;
     --font: 'Poppins' !important;
 }
+
 .particle-style {
     position: absolute;
     top: 0;
     width: 100%;
-    left:0;
+    left: 0;
 }
+
 body {
     background-color: var(--major-black) !important;
     color: #0EF37F !important;
@@ -98,16 +100,6 @@ body {
 
 /* GUEST LECTURE CSS */
 
-.guestname:hover {
-    color: rgb(109, 184, 219);
-    font-size: 2.4rem;
-}
-
-.guestimg:hover {
-    margin-top: 1rem;
-    border-radius: 5rem;
-}
-
 .col {
     text-align: center;
 }
@@ -123,7 +115,14 @@ body {
 
 .mainbox {
     margin: 18px;
-    border: solid #0EF37F 2px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.guestheading {
+    font-weight: 600;
+    font-size: 5em;
 }
 
 .guestrow {
@@ -147,7 +146,6 @@ body {
 .guestimg {
     object-fit: cover;
     max-width: 80%;
-    border-radius: 3rem;
 }
 
 .login-button {
@@ -207,7 +205,7 @@ body {
 .query-hd {
     font-size: 12vh;
     font-weight: 400 !important;
-    margin: 2vh auto;   
+    margin: 2vh auto;
     text-align: center;
 }
 
@@ -216,36 +214,42 @@ body {
     letter-spacing: 2px;
 }
 
-.form-container, .form-ele input, .form-ele textarea  {
+.form-container,
+.form-ele input,
+.form-ele textarea {
     font-size: 17px;
     width: 33vw;
     margin: 0 auto;
+    color: var(--primary) !important;
 }
 
 .form-ele {
     padding-bottom: 10px;
 }
 
-.form-ele textarea, .form-ele input {
+.form-ele textarea,
+.form-ele input {
     padding: 5px;
-    border-radius: 10px;   
+    border-radius: 10px;
     background-color: #121B20;
     color: #f4f4f4;
     border-style: none;
     font-family: "Ubuntu", sans-serif;
 }
 
-.form-ele textarea:focus, .form-ele input:focus {
+.form-ele textarea:focus,
+.form-ele input:focus {
     outline: none;
 }
 
-.form-ele input::placeholder, .form-ele textarea::placeholder {
+.form-ele input::placeholder,
+.form-ele textarea::placeholder {
     padding: 5px;
     color: #cccccc;
 }
 
-.query-feedback-box{
-    text-align: center;   
+.query-feedback-box {
+    text-align: center;
 }
 
 .query-send {
@@ -262,7 +266,7 @@ body {
     letter-spacing: 1px;
     background-color: transparent;
     cursor: pointer;
-    padding: 4px 20px; 
+    padding: 4px 20px;
     transition: all .35s;
 }
 
@@ -275,30 +279,229 @@ body {
     .form-ele textarea {
         width: 60vw;
         height: 20vh;
-    }    
-
+    }
     .form-ele input {
         width: 60vw;
     }
-
     .form-container {
         width: 60vw;
         margin: 0 auto;
     }
-
     .query-hd {
         font-size: 11vh;
     }
 }
 
-.splashscr
-{
+.splashscr {
     text-align: center;
     overflow: hidden;
 }
-.splashlogo
-{
+
+.splashlogo {
     width: 45%;
     height: auto;
     object-fit: cover;
 }
+
+
+/*contact page css */
+
+.contactimg {
+    height: 100px;
+    width: 100px;
+}
+
+.contactcard {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #0E0E0E;
+    display: flex;
+    justify-content: center;
+}
+
+.footer>div {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.no-style-link {
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--primary);
+}
+
+.no-style-link:hover {
+    color: var(--primary);
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.about-div {
+    border: none !important;
+    width: 90% !important;
+    margin: auto !important;
+    margin-bottom: 100px !important;
+}
+
+.holder {
+    width: 80%;
+    margin: auto;
+}
+
+/*  category page CSS  */
+
+.category-main-title {
+    color: var(--primary);
+    margin-top: 10vh;
+    font-size: 7vw;
+    font-weight: 500 !important;
+
+}
+
+.category-container {
+  
+  margin-left:5%;
+  width: 90%;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.category-card {
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  background-color: #121B20;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.category-card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.category-card:hover {
+  transform: translateY(-40px);
+  transition: 0.4s ease-out;
+}
+
+.category-card:hover ~ .category-card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+@media (max-width:800px) {
+  .category-card {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: #121B20;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+
+  }
+  .category-card:not(:first-child) {
+   margin-top: -200px;
+   margin-left:0px;
+   
+  }
+  .category-card:hover ~ .category-card {
+    position: relative;
+    left:0px;
+    /* top: -120px; */
+    transition: 0.4s ease-out;
+  }
+  .category-card:hover {
+    transform: translateY(-100px);
+    transition: 0.4s ease-out;
+  }
+  .category-container {
+  
+    margin-left:10%;
+    width: 80%;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: block;
+  }
+  .category-main-title{
+    font-size: 12vw;
+  }
+}
+
+.category-subtitle {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.category-bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #0EF37F;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.category-card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.category-circle {
+  background: #0EF37F;
+  border-radius: 50%;
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  top: 45%;
+  left: calc(25%);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+
+.category-card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+/*******/

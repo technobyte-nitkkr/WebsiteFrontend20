@@ -24,7 +24,7 @@ const GuestLecture = () => {
   console.log(items);
   return (
     <div className="mainbox">
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -41,14 +41,14 @@ const GuestLecture = () => {
         }}
       >
         <source src={back} type="video/mp4" />
-      </video>
+      </video> */}
       <div className="mainguest">
         <h1 className="guestheading">GUEST LECTURES</h1>
       </div>
       <div>
-        <Container style={{display: "block",maxWidth:"98%"}}>
+        <Container style={{ display: "block", maxWidth: "98%" }}>
           {items.map((item, index) => (
-            <Row className="guestrow" style={{marginTop:"0"}}>
+            <Row className="guestrow" style={{ marginTop: "0" }}>
               <Col xl={3} md={6} sm={12}>
                 <img src={item.imageUrl} alt="img1" className="guestimg" />
               </Col>
