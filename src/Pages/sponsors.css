@@ -7,8 +7,29 @@ body {
   * {
     box-sizing: border-box;
   }
+
+
+  .sponsor-wrapper {
+    display: flex;
+    justify-content: center;
+    background:transparent;
+    margin-bottom:3rem;
+  }
   
-  .container {
+  
+  .sponsor-headline {
+      background-color: #0EF37F;
+      font-weight: 800; 
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+      font-size: 3.4rem
+
+  }
+  
+  .sponsi-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
@@ -21,7 +42,7 @@ body {
   .sponsi-card-top, .sponsi-card-right, .sponsi-card-bottom, .sponsi-card-left {
     display: flex;
     flex-wrap: nowrap;
-    background-color: blanchedalmond;
+    background-color:#121B20;
     height: 100%;
     width: 100%;
     border-radius: 95.2380952381px;
@@ -119,10 +140,24 @@ body {
   .sponsi-card-text p {
     margin: 0;
     line-height: 1.35em;
-    color: #334455;
+    color:white;
+    font-size:1.2rem;
+  }
+  .sponsi-card-text h2 {
+    margin: 0;
+    line-height: 1.35em;
+    font-weight: ;
   }
   
+  @media (max-width:960px){
+    .sponsor-headline{
+      font-size:2.5rem;
+    }
+  }
   @media (max-width: 500px) {
+    .sponsor-headline{
+      font-size:1.7rem;
+    }
     .sponsi-card-top {
       flex-direction: row;
       grid-column: auto / span 2;

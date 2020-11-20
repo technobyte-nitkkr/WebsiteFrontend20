@@ -1,101 +1,62 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './sponsors.css';
-const Sponsors=()=>{
-   
-   return(
-       <div>
-<div className='container'>
-  <div className='sponsi-card-left'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/220072/pexels-photo-220072.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
+import axios from 'axios';
+import Keys from "../config.keys";
+const Sponsors = () => {
+  var arr = ['left', 'bottom', 'right', 'top'];
+  var [sponsorList, setSponsorList] = useState([]);
+  useEffect(() => {
+
+    const getSponsors = async () => {
+      try {
+        var url = Keys.BASE_API + '/sponsors';
+        console.log(url)
+        var response = await axios.get(url);
+        console.log(response.data.data.paisa);
+        setSponsorList(response.data.data.paisa);
+      }
+      catch (error) {
+        console.log(error);
+      }
+    };
+    getSponsors();
+
+
+  }, []);
+  return (
+    <div>
+      <div className="sponsor-wrapper">
+
+        <h2 className="sponsor-headline typography-sponsor-headline">Our Amazing&nbsp;Sponsors</h2>
+
+      </div>
+      <div className='sponsi-container'>
+
+        {sponsorList.map((item) => {
+          var s = arr[Math.floor(Math.random() * arr.length)];
+          console.log(s);
+
+         return item.sponsors.map((item1,index) => {
+            return (
+              <div key={index} className={`sponsi-card-${s}`}>
+                <div className='sponsi-card-image'>
+                  <img style={{
+                    background:'contain'
+                  }} src={item1.imageUrl} />
+                </div>
+                <div className='sponsi-card-text'>
+                  <h2 ><a href={item1.targetUrl}>Visit</a></h2>
+                  <br />
+
+                  <p>{item.sponsorSection}</p>
+                </div>
+              </div>)
+          })
+        })}
+
+
+      </div>
     </div>
-    <div className='sponsi-card-text'>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-  <div className='sponsi-card-top'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/1011334/pexels-photo-1011334.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
-    </div>
-    <div className='sponsi-card-text'>
-      <p>Quisque cursus, metus vitae pharetra auctor.</p>
-    </div>
-  </div>
-  <div className='sponsi-card-right'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/35828/soap-bubble-colorful-ball-soapy-water.jpg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
-    </div>
-    <div className='sponsi-card-text'>
-      <p>Ut eu diam at pede suscipit sodales.</p>
-    </div>
-  </div>
-  <div className='sponsi-card-right'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/701855/pexels-photo-701855.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
-    </div>
-    <div className='sponsi-card-text'>
-      <p>Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.</p>
-    </div>
-  </div>
-  <div className='sponsi-card-top'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/668295/pexels-photo-668295.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
-    </div>
-    <div className='sponsi-card-text'>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-  <div className='sponsi-card-bottom'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/63238/pexels-photo-63238.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
-    </div>
-    <div className='sponsi-card-text'>
-      <p>Ut eu diam at pede suscipit sodales.</p>
-    </div>
-  </div>
-  <div className='sponsi-card-left'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/997725/pexels-photo-997725.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
-    </div>
-    <div className='sponsi-card-text'>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-  <div className='sponsi-card-bottom'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/585581/pexels-photo-585581.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
-    </div>
-    <div className='sponsi-card-text'>
-      <p>Quisque cursus, metus vitae pharetra auctor.</p>
-    </div>
-  </div>
-  <div className='sponsi-card-right'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/532561/pexels-photo-532561.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
-    </div>
-    <div className='sponsi-card-text'>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-  <div className='sponsi-card-top'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/279376/pexels-photo-279376.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260'/>
-    </div>
-    <div className='sponsi-card-text'>
-      <p>Integer lacinia sollicitudin massa. Cras metus.</p>
-    </div>
-  </div>
-  <div className='sponsi-card-left'>
-    <div className='sponsi-card-image'>
-      <img src='https://images.pexels.com/photos/701855/pexels-photo-701855.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260'/>
-    </div>
-    <div className='sponsi-card-text'>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-  
-</div>
-</div>
-   )
+  )
 };
-export {Sponsors};
+export { Sponsors };
