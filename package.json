@@ -12,6 +12,7 @@
     "format": "^0.2.2",
     "history": "^5.0.0",
     "jsonwebtoken": "^8.5.1",
+    "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
