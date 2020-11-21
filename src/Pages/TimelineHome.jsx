@@ -1,7 +1,7 @@
 import React, { useEffect, useContext, useState } from 'react';
 import Store from '../Store/Store';
 import axios from 'axios';
-import Elist from '../evtImg';
+import Elist from '../evtImg.js';
 import { Timeline, TimelineEvent } from 'react-event-timeline';
 import dateFormat from 'dateformat';
 import HorizontalTimeline from 'react-horizontal-timeline';

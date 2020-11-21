@@ -1,0 +1,33 @@
+{
+    "data": 
+    [
+        {
+            "name":"Anuj Mehta",
+            "year":"3rd",
+            "branch":"CSE",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"Really happy to be here! Awesome experience to see the talented and amazing minds working towards brilliancy. "
+        },
+        {
+            "name":"Nipun Singla",
+            "year":"3rd",
+            "branch":"IT",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"Really happy to be here! Awesome experience to see the talented and amazing minds working towards brilliancy."
+        },
+        {
+            "name":"Pratham Aggarwal",
+            "year":"4rth",
+            "branch":"CSE",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"Platforms like these which provide events and competitions to showcase your skills along with so much of fun and entertainment are highly appericiated!!"
+        },
+        {
+            "name":"Saran",
+            "year":"3rd",
+            "branch":"IT",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"Platforms like these which provide events and competitions to showcase your skills along with so much of fun and entertainment are highly appericiated!!"
+        }
+    ]
+}

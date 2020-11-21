@@ -1,3 +1,4 @@
+
 module.exports = [{
     event: 'Astronomy',
     img: 'https://firebasestorage.googleapis.com/v0/b/techspardha-87928.appspot.com/o/categoryIcons%2Fastronomy.png?alt=media&token=ceaf6027-972a-4cbc-a6a0-d42e4e8196e8',
