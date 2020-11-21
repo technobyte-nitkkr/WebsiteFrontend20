@@ -5,7 +5,6 @@ import img3 from "../videos/instagram.png";
 const Devs = () => {
     const [ circleData, setCircleData ] = useState({
         strokeDashoffset :0,
-        backgroundImage:'img-1.jpg',
         userBox:'100px'
     });
 
@@ -18,7 +17,7 @@ const Devs = () => {
     };
 
     return (
-      <div id="main" style = {{backgroundImage: `url(/images/${circleData.backgroundImage})`}}>
+      <div id="main" style = {{backgroundImage: `url(/images/${circleData.backgroundImage})`, backgroundRepeat:"no-repeat",margin:"0",padding:"0"}}>
         <div className="circle-box">
           <svg height="402" width="402">
             <circle r="200" cx="201" cy="201" strokeWidth="1px" stroke="gray" fill="none" />
@@ -29,11 +28,11 @@ const Devs = () => {
             />
           </svg>
           <div>
-            <span className="span-dev" id="step1" onClick = {() => handleClick(1004, 'img-2.jpg', '-350px')}></span>
-            <span className="span-dev" id="step2" onClick = {() => handleClick(753, 'img-3.jpg', '-800px')}></span>
-            <span className="span-dev" id="step3" onClick = {() => handleClick(502, 'img-4.jpg', '-1250px')}></span>
-            <span className="span-dev" id="step4" onClick = {() => handleClick(251, 'img-5.jpg', '-1700px')}></span>
-            <span className="span-dev" id="step5" onClick = {() => handleClick(0, 'img-1.jpg', '100px')}></span>
+            <span className="span-dev" id="step1" onClick = {() => handleClick(1004, 'img-14.jpg', '-350px')}></span>
+            <span className="span-dev" id="step2" onClick = {() => handleClick(753, 'img-13.jpg', '-800px')}></span>
+            <span className="span-dev" id="step3" onClick = {() => handleClick(502, 'img-12.png', '-1250px')}></span>
+            <span className="span-dev" id="step4" onClick = {() => handleClick(251, 'img-11.jpg', '-1700px')}></span>
+            <span className="span-dev" id="step5" onClick = {() => handleClick(0, 'img-10.jpg', '100px')}></span>
           </div>
           <div className="user-box" id="userBox" style = {{top: circleData.userBox}}>
             <div className="user">
