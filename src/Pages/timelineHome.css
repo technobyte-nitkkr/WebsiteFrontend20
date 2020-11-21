@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     background: transparent;
+
     
   }
   .timeline-wrapper{
@@ -16,6 +17,7 @@
   }
   ul{
     overflow-x: scroll;
+    scrollbar-width: none;
     overflow-y: hidden;
     white-space:nowrap
   }
@@ -64,8 +66,8 @@
     transition: all 200ms ease-in;
   }
   .timeline-image{
-      width:5rem;
-        height:5rem;
+      width:8rem;
+        height:8rem;
       
   }
   .li.complete .status {
@@ -81,7 +83,7 @@
     color: #66DC71;
   }
 
-  @media screen and (max-height:762px){
+  @media only screen and (max-height:809px) and (min-width:820){
     .timeline{
       display: none;
     }

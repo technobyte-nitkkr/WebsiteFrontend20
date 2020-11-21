@@ -41,7 +41,7 @@ const Sponsors = () => {
               <div key={index} className={`sponsi-card-${s}`}>
                 <div className='sponsi-card-image'>
                   <img style={{
-                    background:'contain'
+                    objectFit:'fill'
                   }} src={item1.imageUrl} />
                 </div>
                 <div className='sponsi-card-text'>
