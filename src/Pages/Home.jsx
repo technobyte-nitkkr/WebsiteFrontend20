@@ -3,17 +3,6 @@ import { Link } from "react-router-dom";
 import { Particle } from "../Components/particle";
 import TimelineHome from '../Pages/TimelineHome';
 const Home = () => {
-  const [width,setWidth]=useState(window.innerWidth);
-  const [height,setHeight]=useState(window.innerHeight);
-  useEffect(()=>{
-    window.addEventListener("resize", () =>{
-
-
-     setWidth(window.innerWidth);
-     setHeight(window.innerHeight);
-     
-    });
-     },[])
   return (
     <div>
       <div className="particle-style">
@@ -70,7 +59,7 @@ const Home = () => {
 <div style={{overflowX:'scroll',
 scrollbarWidth: 'none'
 }}>
- {height<=809?<span></span>:<TimelineHome/>} 
+ <TimelineHome/>
 
   
   </div>
