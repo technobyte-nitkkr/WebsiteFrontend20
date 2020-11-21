@@ -67,6 +67,13 @@ const Home = () => {
       </div>
 
 
+<div style={{overflowX:'scroll',
+scrollbarWidth: 'none'
+}}>
+ {height<=809?<span></span>:<TimelineHome/>} 
+
+  
+  </div>
       <Particle/>
 
     </div>
