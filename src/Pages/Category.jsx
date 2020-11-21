@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from 'react';
 import axios from 'axios';
 import Key from "../config.keys";
+import Elist from '../evtImg.js';
 import { Link } from 'react-router-dom';
 const Category = () => {
     const [data, setData] = useState([]);
@@ -21,6 +22,16 @@ const Category = () => {
         };
         getEvents();
     }, []);
+    function getImage(eventName) {
+        var x;
+        Elist.map((element, index) => {
+            if (element.event == eventName) {
+                x = element.img;
+                return false;
+            }
+        });
+        return x;
+    }
     console.log(data.categories);
     var categoriesString = [];
 
@@ -50,7 +61,11 @@ const Category = () => {
                             </div>
                             <div className="category-circle">
                             </div>
-
+                            <div >
+                                <img className='category-image'
+                                    src={getImage(cat)}>
+                                </img>
+                            </div>
                         </Link>
                     </div>
                 ))

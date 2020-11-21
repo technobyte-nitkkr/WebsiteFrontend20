@@ -592,6 +592,17 @@ svg{
     position: absolute;
     top: 45%;
     left: calc(25%);
+    
+}
+
+.category-image{
+    width:70%;
+    height: 30%;
+    position: absolute;
+    top:45%;
+    left: calc(15%);
+    /* z-index: 101; */
+    
 }
 
 .stroke {
