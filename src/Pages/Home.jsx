@@ -70,7 +70,7 @@ const Home = () => {
 <div style={{overflowX:'scroll',
 scrollbarWidth: 'none'
 }}>
- {width>=820 && height<=809?<span></span>:<TimelineHome/>} 
+ {height<=809?<span></span>:<TimelineHome/>} 
 
   
   </div>
