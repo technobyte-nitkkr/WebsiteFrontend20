@@ -14,7 +14,7 @@
 }
 .testCard
 {
-    height: 400px;
+    height: 600px;
     background-color :#121B20;
     border-radius: .6rem;
     margin-bottom: 1rem;
@@ -28,4 +28,8 @@
 .testcontainer
 {
     max-width: 98%;
+}
+.testimonial
+{
+    margin-bottom: 100px;
 }

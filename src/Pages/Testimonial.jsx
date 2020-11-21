@@ -28,7 +28,7 @@ function Testimonial() {
                     </Col>
                     <Col xl={9} style={{textAlign:"center"}}>
                         <p>{item.name}</p>
-                        <p>{item.branch}, {item.year} year</p>
+                        <p>{item.course} ( {item.branch} ), {item.year} year</p>
                     </Col>
                   </Row>
                   </Container>

@@ -1,33 +1,137 @@
 {
     "data": 
-    [
+    [       
+        {
+            "name":"Shraddha Jain",
+            "year":"1st",
+            "branch":"IT",
+            "course":"B.Tech",
+            "imageUrl":"/images/shradhha.jpg",
+            "review":"I was a part of Techspardha and it turned out to be a roller coaster ride for me. I was exposed to the world of fascinating tech through Techspardha. When Excalibar helped me in learning new techniques and enhance communication skills, Encoder was there for all my mates to support the competitive environment. When we were worried about our future, Guest Lectures by renowned personalities gave us a path to our goals. It is a great way to start your journey in the world of technology"
+        },
+        {
+            "name":"Monika jangid",
+            "year":"1st",
+            "branch":"CS",
+            "course":"B.Tech",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"Techspardha 19 is one of my most memorable time of 2019. We are just freshers who are so excited for this technical event and it become best 3 days of 2019. That late night working with seniors for events,decorating our stalls in AE lawns..every stall represent different societies in most fabulous way.Thankyou to all technical societies and nit kkr for making this techspardha so amazing for me and all students."
+        },
+        {
+            "name":"Dhruv Singh",
+            "year":"1st",
+            "branch":"CS",
+            "course":"B.Tech",
+            "imageUrl":"/images/dhruv.jpeg",
+            "review":"Techspardha is the largest technical fest in North India and it certainly lived up to its name. Techspardha is organized by Technobyte, the technical society of NIT KKR. This tech fest had everything from gaming events to a full-fledged Hackathon. As a fresher in college and a newly joined member of Technobyte, I had a blast as I helped around in the fest. I learned a lot from my seniors who are super friendly and talented as well. I can't wait for this year's fest. It will be epic as usual :)"
+        },
+
+        {
+            "name":"Riya Arora",
+            "year":"1st",
+            "branch":"IT",
+            "course":"B.Tech",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"One of the biggest techfest in North India, and hence a great opportunity to show case technical skills , ideas , innovation , aptitude etc blended with the Guest lectures .... All the events were really good and gained a lot of knowledge . I recommend to participate in this technical extravaganza. :)"
+        },
         {
             "name":"Anuj Mehta",
-            "year":"3rd",
-            "branch":"CSE",
-            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-            "review":"Really happy to be here! Awesome experience to see the talented and amazing minds working towards brilliancy. "
+            "year":"2nd",
+            "branch":"CS",
+            "course":"B.Tech",
+            "imageUrl":"/images/Anuj.jpg",
+            "review":"Experience at Techspardha was really awesome. It was very well organized by the respective societies. The event which attracted me the most was Gamestation. The two day gaming event with Latest technologies available in the market was surely the highlight of Techspardha.Platforms like these which provide events and competitions to showcase your skills along with so much of fun and entertainment are highly appericiated!! Kudos to the Organizers."
         },
         {
-            "name":"Nipun Singla",
+            "name":"Sparsh Batra",
+            "year":"2nd",
+            "branch":"IT",
+            "course":"B.Tech",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"Undoubtedly, it was an amazing experience. Learning in a fun way is really enjoyable while teaches a lot. Participation in events like Hackshetra taught me how to work in a group as well improved my technical skills. Altogether you can improve by entertaining yourself"
+        },
+        {
+            "name":"Nipun",
+            "year":"2nd",
+            "branch":"IT",
+            "course":"B.Tech",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"My last Year fest experience was quite amazing, I participated in so many events like Hackshetra, Encoder etc.. where not only I learned a lot of new things but also enjoyed working with my friends and seniors. I was so amazed to see various activites going on everywhere which was just creating the diversity of technology and enlightening the power of our great Engineers."
+        },
+
+        {
+            "name":"Jitender",
+            "year":"2nd",
+            "branch":"EE",
+            "course":"B.Tech",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"It was my first time participating in a technical event , and the experience was amazing. I got to learn a lot of things that might not had been possible otherwise. Techspardha 19 became one of the most cherished memory in NIT Kurukshetra. The curiosity to learn, the adrenaline rush and the amazement  were making the experience all the more delightful!"
+        },
+        {
+            "name":"Harsh",
+            "year":"1st",
+            "branch":"EE",
+            "course":"B.Tech",
+            "imageUrl":"/images/Harsh.jpg",
+            "review":"Techspardha 2K19 was one of the best events I've ever attended. That was the time when I learned how it feels to make new things, think of practical solutions, i.e., it was the first time I was thinking like an Engineer who is working on a project that is no more limited to the academics. During that time I learned a variety of new stuffs, made new friends and some magnificent memories too. This was the time when I got the chance to grow and become a better version of myself."
+        },
+        {
+            "name":"Shobha",
+            "year":"1st",
+            "branch":"CS",
+            "course":"B.Tech",
+            "imageUrl":"/images/Shobha.jpg",
+            "review":"It was the first time , I had ever participated in any technical fest and it was so cool to learn new things . The whole fest was like a journey, where on each turn , I explored new things. I am very excited to be a part of it again."
+        },
+        {
+            "name":"Aarushi Vohra",
+            "year":"1st",
+            "branch":"CS",
+            "course":"B.Tech",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"I had a wonderful time during Techspardha 19. As a first-year student, it was pleasant to interact and work with students from various interests. The amiable vibe and theme of the fest were so inviting. There were so many exciting events to participate in. I had a great time working on projects. Guest lectures by famous speakers were inspiring and engaging. It was a good learning experience."
+        },
+
+        {
+            "name":"Vaibhav Gupta",
+            "year":"3rd",
+            "branch":"ME",
+            "course":"B.Tech",
+            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+            "review":"I had taken part in Astroquiz, Astrohunt and Geek quiz in Techspardha '19. The events taught me how to do work in group. The best part was to solve the astrohunt question using hints and reached to the particular destination in college for next question. Also getting a prize from college teachers and director was a memorable moment of college life."
+        },
+        {
+            "name":"Anshika Jain",
+            "year":"1st",
+            "branch":"IT",
+            "course":"B.Tech",
+            "imageUrl":"/images/Anshika.jpg",
+            "review":"Overall it was a wonderful experience .That deco work at night , those pics with all our seniors and batchmates. And all the events of techspardha were really nice. The cooperation of all the seniors. Learned lots of things."
+        },
+        {
+            "name":"Yash Goenka",
+            "year":"2nd",
+            "branch":"IT",
+            "course":"B.Tech",
+            "imageUrl":"/images/Yash.jpeg",
+            "review":"The events in the tech fest helped me alot to explore various things ..Techspardha has a lot to offer students who are willing to learn.. And help is always given to those who ask for it ✨"
+        },
+        {
+            "name":"Pratham Agarwal",
+            "year":"3rd",
+            "branch":"CS",
+            "course":"B.Tech",
+            "imageUrl":"https://avatars0.githubusercontent.com/u/33419668?s=400&u=1b145a27955d29ddffe512b53b2d71e388cd16b5&v=4",
+            "review":"NIT Kurukshetra's Technical Fest, the experience was totally accountable for the tremendous Fam!!! Got to learn a lot and it was all worth it to spend my time here.Well managed, amazing prizes, lots of fun and the latest technical showcase along with workshops. Cheers to all the peeps behind it for making it this big!!!"
+        },
+
+        {
+            "name":"Raghav Kaushik",
             "year":"3rd",
             "branch":"IT",
-            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-            "review":"Really happy to be here! Awesome experience to see the talented and amazing minds working towards brilliancy."
-        },
-        {
-            "name":"Pratham Aggarwal",
-            "year":"4rth",
-            "branch":"CSE",
-            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-            "review":"Platforms like these which provide events and competitions to showcase your skills along with so much of fun and entertainment are highly appericiated!!"
-        },
-        {
-            "name":"Saran",
-            "year":"3rd",
-            "branch":"IT",
-            "imageUrl":"https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-            "review":"Platforms like these which provide events and competitions to showcase your skills along with so much of fun and entertainment are highly appericiated!!"
+            "course":"B.Tech",
+            "imageUrl":"/images/Raghav.jpg",
+            "review":"Really happy to be here! Awesome experience to see the talented and amazing minds working towards brilliancy. Platforms like these which provide events and competitions to showcase your skills along with so much of fun and entertainment are highly appericiated!!"
         }
     ]
 }
