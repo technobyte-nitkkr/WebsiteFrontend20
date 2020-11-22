@@ -488,6 +488,10 @@ svg {
     font-weight: 600 !important;
 }
 
+.md {
+    font-size: 1.5em;
+}
+
 .category-container {
     margin-left: 5%;
     width: 90%;
