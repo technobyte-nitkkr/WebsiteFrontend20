@@ -1,0 +1,199 @@
+
+
+
+  .sponsor-wrapper {
+    display: flex;
+    justify-content: center;
+    background:transparent;
+    margin-bottom:3rem;
+  }
+  
+  
+  .sponsor-headline {
+      background-color: #0EF37F;
+      font-weight: 800; 
+
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0;
+      font-size: 3.4rem
+
+  }
+  
+  .sponsi-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-auto-rows: 200px;
+    grid-auto-flow: row dense;
+    grid-gap: 23px;
+    justify-content: center;
+  }
+  
+  .sponsi-card-top, .sponsi-card-right, .sponsi-card-bottom, .sponsi-card-left {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:#121B20;
+    height: 100%;
+    width: 100%;
+    border-radius: 95.2380952381px;
+    box-shadow: 0px 3px 9px 1px rgba(0, 10, 20, 0.2);
+  }
+  
+  .sponsi-card-top {
+    flex-direction: column;
+    grid-column: auto / span 1;
+    grid-row: auto / span 2;
+  }
+  
+  .sponsi-card-right {
+    flex-direction: row-reverse;
+    grid-column: auto / span 2;
+    grid-row: auto / span 1;
+  }
+  
+  .sponsi-card-bottom {
+    flex-direction: column-reverse;
+    grid-column: auto / span 1;
+    grid-row: auto / span 2;
+  }
+  
+  .sponsi-card-left {
+    flex-direction: row;
+    grid-column: auto / span 2;
+    grid-row: auto / span 1;
+  }
+  
+  .sponsi-card-image {
+    display: flex;
+  }
+  
+  .sponsi-card-top .sponsi-card-image, .sponsi-card-bottom .sponsi-card-image {
+    height: 50%;
+    width: 100%;
+  }
+  
+  .sponsi-card-left .sponsi-card-image, .sponsi-card-right .sponsi-card-image {
+    height: 100%;
+    width: 50%;
+  }
+  
+  .sponsi-card-image img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .sponsi-card-top img {
+    border-radius: 95.2380952381px 95.2380952381px 0 0;
+  }
+  
+  .sponsi-card-right img {
+    border-radius: 0 95.2380952381px 95.2380952381px 0;
+  }
+  
+  .sponsi-card-bottom img {
+    border-radius: 0 0 95.2380952381px 95.2380952381px;
+  }
+  
+  .sponsi-card-left img {
+    border-radius: 95.2380952381px 0 0 95.2380952381px;
+  }
+  
+  .sponsi-card-text {
+    align-self: center;
+    padding: 23px;
+  }
+  
+  .sponsi-card-top .sponsi-card-text {
+    height: auto;
+    width: auto;
+    padding-bottom: 36.8px;
+  }
+  
+  .sponsi-card-right .sponsi-card-text {
+    height: auto;
+    width: 50%;
+    padding-left: 36.8px;
+  }
+  
+  .sponsi-card-bottom .sponsi-card-text {
+    height: auto;
+    width: auto;
+    padding-top: 36.8px;
+  }
+  
+  .sponsi-card-left .sponsi-card-text {
+    height: auto;
+    width: 50%;
+    padding-right: 36.8px;
+  }
+  
+  .sponsi-card-text p {
+    margin: 0;
+    line-height: 1.35em;
+    color:white;
+    font-size:1.2rem;
+  }
+  .sponsi-card-text h2 {
+    margin: 0;
+    line-height: 1.35em;
+    font-weight: 2.4rem;
+  }
+  
+  @media (max-width:960px){
+    .sponsor-headline{
+      font-size:2.5rem;
+    }
+  }
+  @media (max-width: 500px) {
+    .sponsor-headline{
+      font-size:1.7rem;
+    }
+    .sponsi-card-top {
+      flex-direction: row;
+      grid-column: auto / span 2;
+      grid-row: auto / span 1;
+    }
+  
+    .sponsi-card-bottom {
+      flex-direction: row-reverse;
+      grid-column: auto / span 2;
+      grid-row: auto / span 1;
+    }
+  
+    .sponsi-card-top .sponsi-card-image, .sponsi-card-bottom .sponsi-card-image {
+      height: 100%;
+      width: 50%;
+    }
+  
+    .sponsi-card-top img {
+      border-radius: 95.2380952381px 0 0 95.2380952381px;
+    }
+  
+    .sponsi-card-bottom img {
+      border-radius: 0 95.2380952381px 95.2380952381px 0;
+    }
+  
+    .sponsi-card-top .sponsi-card-text {
+      height: auto;
+      width: 50%;
+      padding-right: 36.8px;
+    }
+  
+    .sponsi-card-bottom .sponsi-card-text {
+      height: auto;
+      width: 50%;
+      padding-left: 36.8px;
+    }
+  }
+  @media (max-width: 400px) {
+    .sponsi-card-image {
+      width: 38% !important;
+    }
+  
+    .sponsi-card-text {
+      width: 62% !important;
+    }
+  }
+  
