@@ -17,7 +17,6 @@ import { Devs } from "./Pages/Devs";
 import { EventDescription } from "./Pages/EventDescription";
 import { Events } from "./Pages/Events";
 import { Queries } from "./Pages/Queries";
-import { Sponsers } from "./Pages/Sponsers";
 import { Category } from "./Pages/Category";
 import { GuestLecture } from "./Pages/GuestLecture";
 import { ErrorPage } from "./Pages/Errorpage";
@@ -45,7 +44,7 @@ function App() {
 
       <Route path="/categories" exact component={Category} />
 
-      <Route path="/sponsers" exact component={Sponsers} />
+      <Route path="/sponsers" exact component={Sponsors} />
 
       <Route path="/events/:category" exact component={Events} />
 
