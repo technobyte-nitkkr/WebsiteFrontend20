@@ -5,6 +5,7 @@ import img3 from "../videos/instagram.png";
 const Devs = () => {
     const [ circleData, setCircleData ] = useState({
         strokeDashoffset :0,
+        backgroundImage: "img-10.jpg",
         userBox:'100px'
     });
 
@@ -33,6 +34,7 @@ const Devs = () => {
             <span className="span-dev" id="step3" onClick = {() => handleClick(502, 'img-12.png', '-1250px')}></span>
             <span className="span-dev" id="step4" onClick = {() => handleClick(251, 'img-11.jpg', '-1700px')}></span>
             <span className="span-dev" id="step5" onClick = {() => handleClick(0, 'img-10.jpg', '100px')}></span>
+            <span className="span-dev" id="step6" onClick = {() => handleClick(1500, 'img-15.jpg', '-2170px')}></span>
           </div>
           <div className="user-box" id="userBox" style = {{top: circleData.userBox}}>
             <div className="user">
@@ -62,34 +64,34 @@ const Devs = () => {
               </a>
             </div>
             <div className="user">
-              <img className="user-img" src="/images/person-3.jpg" alt=""/>
-              <h1>Carl Perry</h1>
-              <a href="https://github.com/sourabhsing3" target="_blank">
+              <img className="user-img" src="https://avatars0.githubusercontent.com/u/33419668?s=400&u=1b145a27955d29ddffe512b53b2d71e388cd16b5&v=4" alt=""/>
+              <h1>Pratham Agarwal</h1>
+              <a href="https://github.com/prathamzx" target="_blank">
                 <img className="social-images" src={img1}  alt=""/>
               </a>
-              <a href="https://www.linkedin.com/in/sourabh-singh-a77547190/" target="_blank">
+              <a href="https://www.linkedin.com/in/pratham-agarwal/" target="_blank">
                 <img className="social-images" src={img2} alt=""/>
               </a>
-              <a href="https://www.instagram.com/_sourabhsingh/" target="_blank">
+              <a href="https://www.instagram.com/_prathampurush_/" target="_blank">
                 <img className="social-images" src={img3} />
               </a>
             </div>
             <div className="user">
-              <img className="user-img" src="/images/person-4.jpg" alt=""/>
-              <h1>Carl Perry</h1>
-              <a href="https://github.com/sourabhsing3" target="_blank">
+              <img className="user-img" src="https://media-exp1.licdn.com/dms/image/C5603AQGyLr7Kg__oWg/profile-displayphoto-shrink_800_800/0?e=1611792000&v=beta&t=-WpdJS6smSB0IJWbeOssIxQHim0dpNqycSwIeq7UWus" alt=""/>
+              <h1>Nipun Singla</h1>
+              <a href="https://github.com/nipunsingla" target="_blank">
                 <img className="social-images" src={img1}  alt=""/>
               </a>
-              <a href="https://www.linkedin.com/in/sourabh-singh-a77547190/" target="_blank">
+              <a href="https://www.linkedin.com/in/nipun-singla-834946170/" target="_blank">
                 <img className="social-images" src={img2} alt=""/>
               </a>
-              <a href="https://www.instagram.com/_sourabhsingh/" target="_blank">
+              <a href="https://www.instagram.com" target="_blank">
                 <img className="social-images" src={img3} />
               </a>
             </div>
             <div className="user">
               <img className="user-img" src="/images/person-5.jpg" alt=""/>
-              <h1>Carl Perry</h1>
+              <h1>Person</h1>
               <a href="https://github.com/sourabhsing3" target="_blank">
                 <img className="social-images" src={img1}  alt=""/>
               </a>
@@ -97,6 +99,19 @@ const Devs = () => {
                 <img className="social-images" src={img2} alt=""/>
               </a>
               <a href="https://www.instagram.com/_sourabhsingh/" target="_blank">
+                <img className="social-images" src={img3} />
+              </a>
+            </div>
+            <div className="user">
+              <img className="user-img" src="https://avatars1.githubusercontent.com/u/44068102?s=460&u=5837ef36f0ca48a3dabaf54fc1b4057051fc8f3b&v=4" alt=""/>
+              <h1>Saran</h1>
+              <a href="https://github.com/saranonearth" target="_blank">
+                <img className="social-images" src={img1}  alt=""/>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank">
+                <img className="social-images" src={img2} alt=""/>
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
                 <img className="social-images" src={img3} />
               </a>
             </div>
