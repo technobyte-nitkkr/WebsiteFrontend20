@@ -485,7 +485,7 @@ svg {
     color: var(--primary);
     margin-top: 10vh;
     font-size: 7vw;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
 }
 
 .category-container {
