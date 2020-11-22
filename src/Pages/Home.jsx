@@ -1,7 +1,7 @@
 import { React } from "react";
 import { Link } from "react-router-dom";
 import { Particle } from "../Components/particle";
-
+import TimelineHome from '../Pages/TimelineHome';
 const Home = () => {
   return (
     <div>
@@ -53,8 +53,15 @@ const Home = () => {
             <div>Devs</div>
           </div>
         </div>
+        <div style={{
+        overflowX:'scroll'
+      }}>
+        <TimelineHome/>
       </div>
+      </div>
+     
       <Particle />
+     
     </div>
   );
 };

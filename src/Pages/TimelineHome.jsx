@@ -80,9 +80,14 @@ const TimelineHome = () => {
                     <span className="author" >
                       <img 
                      className='timeline-image'
+                     style={{
+                       width:70,
+                       height:60,
+                       
+                     }}
                       src={getImage(event.eventCategory)}></img>
                       {event.eventName.split(" ")[0]}</span>
-                    <span className="date">
+                    <span className="date" style={{marginBottom:'1rem'}}>
                       {date(event.startTime)}
 
                     </span>
