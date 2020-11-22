@@ -126,25 +126,26 @@ const Queries = () => {
       </div>
       <div className="flex-end">
         {!open ? (
-          <div className="floating">
-            <div
-              onClick={() => {
-                if (state.isAuth) {
-                  setOpen(true);
-                } else {
-                  setMessage("Please login to ask query.");
-                  setTimeout(() => {
-                    setMessage(null);
-                  }, 2000);
-                }
-              }}
-            >
+          <div
+            className="floating"
+            onClick={() => {
+              if (state.isAuth) {
+                setOpen(true);
+              } else {
+                setMessage("Please login to ask query.");
+                setTimeout(() => {
+                  setMessage(null);
+                }, 2000);
+              }
+            }}
+          >
+            <div>
               <i className="fas fa-question"></i>
             </div>
           </div>
         ) : (
-          <div className="floating">
-            <div onClick={() => setOpen(false)}>
+          <div className="floating" onClick={() => setOpen(false)}>
+            <div>
               <i className="fas fa-times"></i>
             </div>
           </div>
