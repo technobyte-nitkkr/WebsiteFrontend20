@@ -54,14 +54,15 @@ const Home = () => {
           </div>
         </div>
         <div style={{
-        overflowX:'scroll'
-      }}>
-        <TimelineHome/>
+          overflowX: 'scroll',
+          scrollbarWidth: 'none',
+        }}>
+          <TimelineHome />
+        </div>
       </div>
-      </div>
-     
+
       <Particle />
-     
+
     </div>
   );
 };
