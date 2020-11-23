@@ -50,7 +50,6 @@ const Sponsors = () => {
                   </h2>
                   <br />
 
-                  <p>{item.sponsorSection}</p>
                 </div>
               </div>
             );
