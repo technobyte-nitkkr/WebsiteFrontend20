@@ -81,7 +81,7 @@ const Events = (props) => {
   return data.length == 0 ? (
     <div></div>
   ) : (
-    <div style={{ backgroundColour: "black" }} className="event-wrapper">
+    <div style={{ backgroundColour: "black",marginBottom:'3rem' }} className="event-wrapper">
       <header>
         <h1 className="category-title">
           {data[0].eventCategory}
