@@ -115,10 +115,10 @@ const Events = (props) => {
           </p>
           <br />
 
-          <h2>
+          {/* <h2>
             <span style={{ marginRight: ".4rem" }}>Prize - </span>
             1k
-          </h2>
+          </h2> */}
           <br />
           <br />
           <h2>Coordinators</h2>
