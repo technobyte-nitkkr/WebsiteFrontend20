@@ -1,25 +1,38 @@
 import React from "react";
 import { format } from "date-fns";
 import "./UserEventCard.css";
+import Elist from '../evtImg';
 const UserEventCard = ({ data }) => {
+
+  function getImage() {
+    var x;
+    Elist.map((element, index) => {
+      if (element.event == data.eventCategory) {
+        x = element.img;
+        return '';
+      }
+    });
+    console.log(x);
+    return x;
+  }
   return (
     <div>
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
+            <h1>{data.eventName}</h1>
             <img
-              src="https://scontent.fluh1-1.fna.fbcdn.net/v/t1.0-9/s960x960/70812730_1422663834556220_4817469918897242112_o.jpg?_nc_cat=105&ccb=2&_nc_sid=110474&_nc_ohc=c-lXPHi_zuQAX8mvzH4&_nc_ht=scontent.fluh1-1.fna&tp=7&oh=012aa16e2edc005b55bbd18515f264b3&oe=5FD2541F"
-              alt="Avatar"
+              src={getImage()}
               style={{
                 width: "300px",
                 height: "300px",
               }}
             />
-            <h1 style={{ backgroundColor: "white" }}>{data.eventName}</h1>
           </div>
-          <div className="flip-card-back">
+          <div  className="flip-card-back">
             <h1>{data.eventName}</h1>
-            <p>{format(new Date(data.startTime), "PPp")}</p>
+            <p  style={{ backgroundColor: "white" }}>{format(new Date(data.startTime), "PPp")}</p>
+              
           </div>
         </div>
       </div>
