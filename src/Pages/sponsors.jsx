@@ -5,7 +5,7 @@ import Keys from "../config.keys";
 import { is } from "date-fns/esm/locale";
 const Sponsors = () => {
   var arr = ["left", "right", "top", "bottom"];
-  var isInWait = true;
+  var isInWait = false;
   var [sponsorList, setSponsorList] = useState([]);
   useEffect(() => {
     const getSponsors = async () => {
@@ -21,9 +21,7 @@ const Sponsors = () => {
     };
     getSponsors();
   }, []);
-  return isInWait ? (
-    <div>Sponsor Page Coming Soon</div>
-  ) : (
+  return (
     <div>
       <div className="sponsor-wrapper">
         <h2 className="sponsor-headline typography-sponsor-headline">
