@@ -55,10 +55,10 @@ const UserProfilePage = () => {
                 </h1>
                 <h2>Email</h2>
                 <p>{userData.user.email}</p>
-                <h2>College</h2>
+                {/* <h2>College</h2>
                 <p>{userData.user.college}</p>
                 <h2>Year</h2>
-                <p>{userData.user.year}</p>
+                <p>{userData.user.year}</p> */}
               </section>
             </section>
           </main>
