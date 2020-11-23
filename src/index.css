@@ -573,7 +573,7 @@ svg {
         font-size: 12vw;
     }
     .category-image {
-        width: 60%;
+        width: 65%;
         height: 45%;
         position: absolute;
         top: 40%;
@@ -632,7 +632,7 @@ svg {
 }
 
 .category-image {
-    width: 55%;
+    width: 60%;
     height: 40%;
     position: absolute;
     top: 42%;
