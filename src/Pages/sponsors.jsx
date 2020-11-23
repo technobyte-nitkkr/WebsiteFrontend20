@@ -22,7 +22,7 @@ const Sponsors = () => {
     getSponsors();
   }, []);
   return (
-    <div>
+    <div style={{marginBottom:'6rem'}}>
       <div className="sponsor-wrapper">
         <h2 className="sponsor-headline typography-sponsor-headline">
           Our Amazing&nbsp;Sponsors
