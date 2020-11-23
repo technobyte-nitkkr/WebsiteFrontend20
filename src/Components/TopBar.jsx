@@ -4,6 +4,7 @@ import LoginButton from "./LoginButton";
 import { GoogleLogout } from "react-google-login";
 import { withRouter, Link } from "react-router-dom";
 import Keys from "../config.keys";
+import logo from './final_logo.png';
 import { LOGOUT } from "../Store/Types";
 const TopBar = (props) => {
   const [{ isAuth, authLoading, user }, dispatch] = useContext(Store);
@@ -21,7 +22,7 @@ const TopBar = (props) => {
       <div className="top-bar">
         <div className="top-title">
           <Link to="/" className="no-style-link">
-            <p className="t-title">Altius/2020</p>
+            <img src={logo} alt="Altius/2020" style={{width:"140px",height:"auto",padding:"0",margin:'0',objectFit:"contain"}}/>
           </Link>
         </div>
 
