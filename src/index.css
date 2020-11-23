@@ -572,6 +572,15 @@ svg {
     .category-main-title {
         font-size: 12vw;
     }
+    .category-image {
+        width: 60%;
+        height: 45%;
+        position: absolute;
+        top: 40%;
+        left: calc(27%);
+        
+        /* z-index: 101; */
+    }
 }
 
 .category-subtitle {
@@ -623,11 +632,11 @@ svg {
 }
 
 .category-image {
-    width: 35%;
-    height: 25%;
+    width: 55%;
+    height: 40%;
     position: absolute;
-    top: 48%;
-    left: calc(33%);
+    top: 42%;
+    left: calc(23%);
     
     /* z-index: 101; */
 }

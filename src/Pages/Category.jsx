@@ -65,9 +65,9 @@ const Category = () => {
                                 <div className="emptybar"></div>
                                 <div className="filledbar"></div>
                             </div>
-                            <div className="category-circle"></div>
+                            {/* <div className="category-circle"></div> */}
                             <div>
-                                <img className="category-image" src={'/category-icons/' + cat + '.svg'}></img>
+                                <img className="category-image" src={'/category-icons/' + cat + '.png'}></img>
                             </div>
                         </Link>
                     </div>
