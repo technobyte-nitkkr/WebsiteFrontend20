@@ -1,7 +1,7 @@
 import { React } from "react";
 import { Link } from "react-router-dom";
 import { Particle } from "../Components/particle";
-import TimelineHome from '../Pages/TimelineHome';
+import TimelineHome from "../Pages/TimelineHome";
 const Home = () => {
   return (
     <div>
@@ -20,7 +20,7 @@ const Home = () => {
             <Link to="/categories">
               <div className="circle" />
             </Link>
-            <div>Category</div>
+            <div>Categories</div>
           </div>
           <div className="m-item">
             <Link to="/contact">
@@ -53,16 +53,17 @@ const Home = () => {
             <div>Devs</div>
           </div>
         </div>
-        <div style={{
-          overflowX: 'scroll',
-          scrollbarWidth: 'none',
-        }}>
+        <div
+          style={{
+            overflowX: "scroll",
+            scrollbarWidth: "none",
+          }}
+        >
           <TimelineHome />
         </div>
       </div>
 
       <Particle />
-
     </div>
   );
 };
