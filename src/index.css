@@ -623,12 +623,12 @@ svg {
 }
 
 .category-image {
-    width: 70%;
-    height: 30%;
+    width: 35%;
+    height: 25%;
     position: absolute;
-    top: 45%;
-    left: calc(15%);
-    filter: invert(1);
+    top: 48%;
+    left: calc(33%);
+    
     /* z-index: 101; */
 }
 
