@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './sponsors.css';
 import axios from 'axios';
 import Keys from "../config.keys";
+import { is } from 'date-fns/esm/locale';
 const Sponsors = () => {
   var arr = ['left', 'right', 'top','bottom'];
+  var isInWait=true;
   var [sponsorList, setSponsorList] = useState([]);
   useEffect(() => {
 
@@ -24,6 +26,7 @@ const Sponsors = () => {
 
   }, []);
   return (
+    isInWait?<div>Sponsor Page Coming Soon</div>:
     <div>
       <div className="sponsor-wrapper">
 
