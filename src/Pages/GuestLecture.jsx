@@ -21,7 +21,7 @@ const GuestLecture = () => {
     };
     getEvents();
   }, []);
-  console.log(items);
+
   return (
     <div className="mainbox">
       {/* <video
@@ -64,7 +64,7 @@ const GuestLecture = () => {
         </Container>
       </div>
           */}
-        <p>Guest lectures page coming soon...... :)</p>
+      <p>Guest lectures page coming soon...... :)</p>
     </div>
   );
 };
