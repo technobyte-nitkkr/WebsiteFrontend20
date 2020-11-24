@@ -64,7 +64,7 @@ const Sponsors = () => {
 
         })}
       </div>
-    </div> */
+    </div> 
   );
 };
 export { Sponsors };
