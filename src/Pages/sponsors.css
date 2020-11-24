@@ -82,7 +82,7 @@
   
   .sponsi-card-image img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   
   .sponsi-card-top img {
@@ -109,13 +109,11 @@
   .sponsi-card-top .sponsi-card-text {
     height: auto;
     width: auto;
-    padding-bottom: 36.8px;
   }
   
   .sponsi-card-right .sponsi-card-text {
     height: auto;
     width: 50%;
-    padding-left: 36.8px;
   }
   
   .sponsi-card-bottom .sponsi-card-text {
@@ -128,6 +126,7 @@
     height: auto;
     width: 50%;
     padding-right: 36.8px;
+    padding-top: 10rem;
   }
   
   .sponsi-card-text p {
@@ -136,9 +135,9 @@
     color:white;
     font-size:1.2rem;
   }
-  .sponsi-card-text h2 {
+  .sponsi-card-text h4 {
     margin: 0;
-    line-height: 1.35em;
+    line-height: 2rem;
     font-weight: 2.4rem;
   }
   
