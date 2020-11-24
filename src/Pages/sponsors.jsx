@@ -50,11 +50,15 @@ const Sponsors = () => {
                   />
                 </div>
                 <div className="sponsi-card-text">
-                  <h2>
+                 <p>
+
+                  <h4>
                     <a href={item.targetUrl} style={{
                       color:'#0EF37F'
                     }}>{item.name}</a>
-                  </h2>
+                  </h4>
+                  </p>
+
                   <br />
 
                 </div>
