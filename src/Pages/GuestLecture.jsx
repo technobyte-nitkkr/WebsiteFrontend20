@@ -23,7 +23,7 @@ const GuestLecture = () => {
   }, []);
 
   return (
-    <div className="mainbox">
+    <div className="mainbox" style={{width:"100%"}}>
       {/* <video
         autoPlay
         loop
@@ -42,8 +42,7 @@ const GuestLecture = () => {
       >
         <source src={back} type="video/mp4" />
       </video> */}
-      {/*
-      <div className="mainguest">
+      <div className="mainguest" style={{width:"100%"}}>
         <h1 className="guestheading">GUEST LECTURES</h1>
       </div>
       <div>
@@ -63,8 +62,6 @@ const GuestLecture = () => {
           ))}
         </Container>
       </div>
-          */}
-      <p>Guest lectures page coming soon...... :)</p>
     </div>
   );
 };
