@@ -47,7 +47,11 @@ module.exports =
             "imageUrl":"https://i.ibb.co/8NWQwjS/Whats-App-Image-2020-11-25-at-16-06-49.jpg",
             "targetUrl":"https://play.google.com/store/apps/details?id=com.edusimp.talk2topper&hl=en_AU"
         }
-        
+        ,{
+            "name":"Sahu Technologies",
+            "imageUrl":"https://i.ibb.co/rxm01CG/Whats-App-Image-2020-11-26-at-19-09-50-2.jpg",
+            "targetUrl":"https://www.sahutechnologies.com/"
+        }
 
 
 
